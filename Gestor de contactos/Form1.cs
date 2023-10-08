@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestor_de_contactos
 {
-    public partial class Form1 : Form
+    public partial class frmInicioDeSesion : Form
     {
-        public Form1()
+        public frmInicioDeSesion()
         {
             InitializeComponent();
         }
@@ -30,6 +30,30 @@ namespace Gestor_de_contactos
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLong_in_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbMostrar_Click(object sender, EventArgs e)
+        {
+            pbOcultar.BringToFront();
+            txtContraseña.PasswordChar = '\0';
+
+        }
+
+        private void pbOcultar_Click(object sender, EventArgs e)
+        {
+            pbMostrar.BringToFront();
+            txtContraseña.PasswordChar = '*';
+            
         }
     }
 }
