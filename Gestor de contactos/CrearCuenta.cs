@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestor_de_contactos
 {
-    public partial class frmCrearCunta : Form
+    public partial class frmCrearCuenta : Form
     {
-        public frmCrearCunta()
+        public frmCrearCuenta()
         {
             InitializeComponent();
         }
