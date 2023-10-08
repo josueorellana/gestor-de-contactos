@@ -26,5 +26,10 @@ namespace Gestor_de_contactos
         {
 
         }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

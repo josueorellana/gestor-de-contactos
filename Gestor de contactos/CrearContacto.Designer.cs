@@ -262,6 +262,7 @@ namespace Gestor_de_contactos
             this.btnCrear.TabIndex = 24;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 

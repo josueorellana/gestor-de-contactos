@@ -65,9 +65,9 @@ namespace Gestor_de_contactos
             // pbOcultar
             // 
             this.pbOcultar.Image = ((System.Drawing.Image)(resources.GetObject("pbOcultar.Image")));
-            this.pbOcultar.Location = new System.Drawing.Point(261, 182);
+            this.pbOcultar.Location = new System.Drawing.Point(269, 117);
             this.pbOcultar.Name = "pbOcultar";
-            this.pbOcultar.Size = new System.Drawing.Size(73, 45);
+            this.pbOcultar.Size = new System.Drawing.Size(52, 38);
             this.pbOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbOcultar.TabIndex = 7;
             this.pbOcultar.TabStop = false;
@@ -93,6 +93,7 @@ namespace Gestor_de_contactos
             this.btnCrearCuenta.TabIndex = 5;
             this.btnCrearCuenta.Text = "Crear cuenta";
             this.btnCrearCuenta.UseVisualStyleBackColor = true;
+            this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
             // btnLong_in
             // 
@@ -144,7 +145,7 @@ namespace Gestor_de_contactos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 450);
+            this.ClientSize = new System.Drawing.Size(566, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmInicioDeSesion";
             this.Text = "Inicio de Sesion";

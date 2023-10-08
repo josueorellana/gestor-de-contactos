@@ -56,5 +56,11 @@ namespace Gestor_de_contactos
             txtContraseña.PasswordChar = '\0';
            
         }
+
+        private void btnCrearCuenta_Click(object sender, EventArgs e)
+        {
+            frmCrearCuenta frm = new frmCrearCuenta();
+            frm.Show();
+        }
     }
 }
