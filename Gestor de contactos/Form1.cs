@@ -44,17 +44,16 @@ namespace Gestor_de_contactos
 
         private void pbMostrar_Click(object sender, EventArgs e)
         {
-            pbMostrar.BringToFront();
+            pbOcultar.BringToFront();
             txtContraseña.PasswordChar = '*';
-
-
+                       
         }
 
         private void pbOcultar_Click(object sender, EventArgs e)
         {
-            pbOcultar.BringToFront();
+            pbMostrar.BringToFront();
             txtContraseña.PasswordChar = '\0';
-           
+
         }
 
         private void btnCrearCuenta_Click(object sender, EventArgs e)

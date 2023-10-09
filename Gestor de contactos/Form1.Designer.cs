@@ -65,9 +65,9 @@ namespace Gestor_de_contactos
             // pbOcultar
             // 
             this.pbOcultar.Image = ((System.Drawing.Image)(resources.GetObject("pbOcultar.Image")));
-            this.pbOcultar.Location = new System.Drawing.Point(269, 117);
+            this.pbOcultar.Location = new System.Drawing.Point(287, 158);
             this.pbOcultar.Name = "pbOcultar";
-            this.pbOcultar.Size = new System.Drawing.Size(52, 38);
+            this.pbOcultar.Size = new System.Drawing.Size(34, 22);
             this.pbOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbOcultar.TabIndex = 7;
             this.pbOcultar.TabStop = false;
