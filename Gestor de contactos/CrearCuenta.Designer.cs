@@ -154,6 +154,7 @@ namespace Gestor_de_contactos
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(158, 20);
             this.txtNombres.TabIndex = 1;
+            this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
             // 
             // frmCrearCuenta
             // 

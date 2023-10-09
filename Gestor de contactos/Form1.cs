@@ -61,5 +61,10 @@ namespace Gestor_de_contactos
             frmCrearCuenta frm = new frmCrearCuenta();
             frm.Show();
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
