@@ -18,20 +18,8 @@ namespace Gestor_de_contactos
             InitializeComponent();
         }
 
-        private void lblNombres_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textNombres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+          
+               
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
@@ -70,34 +58,14 @@ namespace Gestor_de_contactos
 
             this.Close();
         }
-        private void txtApellidos_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void frmCrearCuenta_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCorreo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCorreoElectronico_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+                              
+                
     }
 }

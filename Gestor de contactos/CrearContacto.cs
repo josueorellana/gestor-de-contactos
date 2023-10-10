@@ -17,19 +17,16 @@ namespace Gestor_de_contactos
             InitializeComponent();
         }
 
-        private void txtCorreos2_TextChanged(object sender, EventArgs e)
+        private void btnCargarImagen_Click(object sender, EventArgs e)
         {
-
+            OpenFileDialog abrirImagen = new OpenFileDialog();
+            if (abrirImagen.ShowDialog() == DialogResult.OK)
+            {
+                pbCargarImagen.ImageLocation = abrirImagen.FileName;
+                pbCargarImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
 
-        private void txtTelefono_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCrear_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

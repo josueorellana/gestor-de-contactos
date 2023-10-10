@@ -16,7 +16,7 @@ namespace Gestor_de_contactos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInicioDeSesion());
+            Application.Run(new frmCrearContacto());
         }
     }
 }

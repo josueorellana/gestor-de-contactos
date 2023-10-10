@@ -61,7 +61,7 @@ namespace Gestor_de_contactos
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese los datos requeridos :";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+          
             // 
             // lblContraseña
             // 
@@ -80,7 +80,7 @@ namespace Gestor_de_contactos
             this.lblCorreoElectronico.Size = new System.Drawing.Size(115, 13);
             this.lblCorreoElectronico.TabIndex = 12;
             this.lblCorreoElectronico.Text = "Correo Electronico";
-            this.lblCorreoElectronico.Click += new System.EventHandler(this.lblCorreoElectronico_Click);
+          
             // 
             // lblApellidos
             // 
@@ -99,7 +99,7 @@ namespace Gestor_de_contactos
             this.lblNombres.Size = new System.Drawing.Size(49, 13);
             this.lblNombres.TabIndex = 10;
             this.lblNombres.Text = "Nombres";
-            this.lblNombres.Click += new System.EventHandler(this.lblNombres_Click);
+          
             // 
             // btnCrear
             // 
@@ -138,7 +138,7 @@ namespace Gestor_de_contactos
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(180, 20);
             this.txtCorreo.TabIndex = 5;
-            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
+           
             // 
             // txtApellidos
             // 
@@ -146,7 +146,7 @@ namespace Gestor_de_contactos
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(158, 20);
             this.txtApellidos.TabIndex = 3;
-            this.txtApellidos.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
+       
             // 
             // txtNombres
             // 
@@ -154,7 +154,7 @@ namespace Gestor_de_contactos
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(158, 20);
             this.txtNombres.TabIndex = 1;
-            this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
+          
             // 
             // frmCrearCuenta
             // 
@@ -166,7 +166,7 @@ namespace Gestor_de_contactos
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmCrearCuenta";
             this.Text = "Crear Cuenta";
-            this.Load += new System.EventHandler(this.frmCrearCuenta_Load);
+       
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
