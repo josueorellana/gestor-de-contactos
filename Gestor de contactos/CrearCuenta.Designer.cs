@@ -55,13 +55,12 @@ namespace Gestor_de_contactos
             this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.txtApellidos);
             this.groupBox1.Controls.Add(this.txtNombres);
-            this.groupBox1.Location = new System.Drawing.Point(107, 46);
+            this.groupBox1.Location = new System.Drawing.Point(38, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(452, 377);
+            this.groupBox1.Size = new System.Drawing.Size(448, 377);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese los datos requeridos :";
-          
             // 
             // lblContraseña
             // 
@@ -80,7 +79,6 @@ namespace Gestor_de_contactos
             this.lblCorreoElectronico.Size = new System.Drawing.Size(115, 13);
             this.lblCorreoElectronico.TabIndex = 12;
             this.lblCorreoElectronico.Text = "Correo Electronico";
-          
             // 
             // lblApellidos
             // 
@@ -99,7 +97,6 @@ namespace Gestor_de_contactos
             this.lblNombres.Size = new System.Drawing.Size(49, 13);
             this.lblNombres.TabIndex = 10;
             this.lblNombres.Text = "Nombres";
-          
             // 
             // btnCrear
             // 
@@ -138,7 +135,6 @@ namespace Gestor_de_contactos
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(180, 20);
             this.txtCorreo.TabIndex = 5;
-           
             // 
             // txtApellidos
             // 
@@ -146,7 +142,6 @@ namespace Gestor_de_contactos
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(158, 20);
             this.txtApellidos.TabIndex = 3;
-       
             // 
             // txtNombres
             // 
@@ -154,19 +149,17 @@ namespace Gestor_de_contactos
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(158, 20);
             this.txtNombres.TabIndex = 1;
-          
             // 
             // frmCrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(722, 532);
+            this.ClientSize = new System.Drawing.Size(566, 450);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmCrearCuenta";
             this.Text = "Crear Cuenta";
-       
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
