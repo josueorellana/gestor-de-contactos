@@ -139,12 +139,12 @@
     <None Include="Resources\585e4bf3cb11b227491c339a.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contactos.mdf">
+    <Content Include="Registro_de _Contactos.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Contactos_log.ldf">
+    <Content Include="Registro_de _Contactos_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Contactos.mdf</DependentUpon>
+      <DependentUpon>Registro_de _Contactos.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
