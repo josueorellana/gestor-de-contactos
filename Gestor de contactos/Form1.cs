@@ -12,36 +12,46 @@ namespace Gestor_de_contactos
 {
     public partial class frmInicioDeSesion : Form
     {
+        string usuario = "Usuario";
+        string Password = "Password";
+
         public frmInicioDeSesion()
         {
             InitializeComponent();
         }
 
-        private void printPreviewDialog1_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnLong_in_Click(object sender, EventArgs e)
         {
+            if (txtUsuario.Text != usuario || txtContraseña.Text != Password)
+            { 
+                  if (txtUsuario.Text != usuario)
+                { 
+                    MessageBox.Show("Usuario incorrecto");
+                   txtUsuario.Clear();
+
+                 }  
+                  if (txtContraseña.Text != Password)
+                { 
+                MessageBox.Show("Contraseña incorrecto");
+                  txtContraseña.Clear();
+                     }
+                 }
+
+            else
+               {
+                txtUsuario.Clear();
+                txtContraseña.Clear();
+                Panel principal = new Panel();
+                principal.ShowDialog();
+                }
+
 
         }
+        
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void pbMostrar_Click(object sender, EventArgs e)
         {
             pbOcultar.BringToFront();
