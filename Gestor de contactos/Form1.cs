@@ -28,14 +28,16 @@ namespace Gestor_de_contactos
             { 
                   if (txtUsuario.Text != usuario)
                 { 
-                    MessageBox.Show("Usuario incorrecto");
+                    MessageBox.Show("Usuario incorrecto","Datos equivocados",MessageBoxButtons.RetryCancel,
+                        MessageBoxIcon.Error);
                    txtUsuario.Clear();
 
                  }  
                   if (txtContraseña.Text != Password)
-                { 
-                MessageBox.Show("Contraseña incorrecto");
-                  txtContraseña.Clear();
+                {
+                    MessageBox.Show("Contraseña incorrecta", "Datos equivocados", MessageBoxButtons.RetryCancel,
+                             MessageBoxIcon.Error);
+                    txtContraseña.Clear();
                      }
                  }
 
