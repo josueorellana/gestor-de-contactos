@@ -93,7 +93,7 @@ namespace Gestor_de_contactos
             this.btnCrearCuenta.TabIndex = 5;
             this.btnCrearCuenta.Text = "Crear cuenta";
             this.btnCrearCuenta.UseVisualStyleBackColor = true;
-            this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
+           
             // 
             // btnLong_in
             // 
@@ -130,7 +130,7 @@ namespace Gestor_de_contactos
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(266, 22);
             this.txtUsuario.TabIndex = 1;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+           
             // 
             // lblUsuario
             // 
