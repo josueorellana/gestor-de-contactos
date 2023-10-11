@@ -273,7 +273,7 @@ namespace Gestor_de_contactos
             // pbCargarImagen
             // 
             this.pbCargarImagen.Image = global::Gestor_de_contactos.Properties.Resources._585e4bf3cb11b227491c339a;
-            this.pbCargarImagen.Location = new System.Drawing.Point(190, 3);
+            this.pbCargarImagen.Location = new System.Drawing.Point(194, 3);
             this.pbCargarImagen.Name = "pbCargarImagen";
             this.pbCargarImagen.Size = new System.Drawing.Size(127, 110);
             this.pbCargarImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
