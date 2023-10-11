@@ -74,12 +74,15 @@
     <Compile Include="CrearCuenta.Designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="crear_contacto.cs" />
+    <Compile Include="crear_cuenta.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inicio_de_sesion.cs" />
     <Compile Include="Panel.cs">
       <SubType>Form</SubType>
     </Compile>
