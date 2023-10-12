@@ -68,8 +68,10 @@ namespace Gestor_de_contactos
 
         }
 
-        
-
-        
+        private void btnCrearCuenta_Click(object sender, EventArgs e)
+        {
+            Form crear = new frmCrearCuenta();
+            crear.Show();
+        }
     }
 }

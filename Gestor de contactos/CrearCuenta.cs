@@ -53,13 +53,18 @@ namespace Gestor_de_contactos
                 return;
             }
 
-            frmCrearContacto Registro = new frmCrearContacto();
-            Registro.Show();
+            MessageBoxButtons boton = MessageBoxButtons.OK;
+              DialogResult dr = MessageBox.Show("Su cuenta fue creada correctamente", "Cuenta creada", boton,
+                             MessageBoxIcon.Information);
 
-            this.Close();
+            if ( dr == DialogResult.OK) { 
+               frmInicioDeSesion Inicio = new frmInicioDeSesion();
+               Inicio.ShowDialog();
+                    
+               this.Close();
+
+            }
         }
-        
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
