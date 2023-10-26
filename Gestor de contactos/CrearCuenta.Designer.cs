@@ -65,7 +65,7 @@ namespace Gestor_de_contactos
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(18, 175);
+            this.lblContraseña.Location = new System.Drawing.Point(80, 207);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(67, 13);
             this.lblContraseña.TabIndex = 13;
@@ -74,7 +74,7 @@ namespace Gestor_de_contactos
             // lblCorreoElectronico
             // 
             this.lblCorreoElectronico.AutoSize = true;
-            this.lblCorreoElectronico.Location = new System.Drawing.Point(18, 133);
+            this.lblCorreoElectronico.Location = new System.Drawing.Point(32, 165);
             this.lblCorreoElectronico.Name = "lblCorreoElectronico";
             this.lblCorreoElectronico.Size = new System.Drawing.Size(115, 13);
             this.lblCorreoElectronico.TabIndex = 12;
@@ -83,7 +83,7 @@ namespace Gestor_de_contactos
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Location = new System.Drawing.Point(18, 89);
+            this.lblApellidos.Location = new System.Drawing.Point(86, 126);
             this.lblApellidos.Name = "lblApellidos";
             this.lblApellidos.Size = new System.Drawing.Size(61, 13);
             this.lblApellidos.TabIndex = 11;
@@ -92,7 +92,7 @@ namespace Gestor_de_contactos
             // lblNombres
             // 
             this.lblNombres.AutoSize = true;
-            this.lblNombres.Location = new System.Drawing.Point(18, 38);
+            this.lblNombres.Location = new System.Drawing.Point(98, 89);
             this.lblNombres.Name = "lblNombres";
             this.lblNombres.Size = new System.Drawing.Size(49, 13);
             this.lblNombres.TabIndex = 10;
@@ -102,9 +102,9 @@ namespace Gestor_de_contactos
             // 
             this.btnCrear.BackColor = System.Drawing.Color.DarkViolet;
             this.btnCrear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCrear.Location = new System.Drawing.Point(187, 222);
+            this.btnCrear.Location = new System.Drawing.Point(136, 249);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(75, 23);
+            this.btnCrear.Size = new System.Drawing.Size(76, 38);
             this.btnCrear.TabIndex = 9;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = false;
@@ -114,9 +114,9 @@ namespace Gestor_de_contactos
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.DarkViolet;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancelar.Location = new System.Drawing.Point(21, 222);
+            this.btnCancelar.Location = new System.Drawing.Point(238, 249);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(73, 40);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -124,28 +124,28 @@ namespace Gestor_de_contactos
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(97, 168);
+            this.txtContraseña.Location = new System.Drawing.Point(153, 200);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(146, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(158, 20);
             this.txtContraseña.TabIndex = 7;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(139, 126);
+            this.txtCorreo.Location = new System.Drawing.Point(153, 158);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(180, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(158, 20);
             this.txtCorreo.TabIndex = 5;
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(85, 82);
+            this.txtApellidos.Location = new System.Drawing.Point(153, 119);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(158, 20);
             this.txtApellidos.TabIndex = 3;
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(85, 31);
+            this.txtNombres.Location = new System.Drawing.Point(153, 86);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(158, 20);
             this.txtNombres.TabIndex = 1;

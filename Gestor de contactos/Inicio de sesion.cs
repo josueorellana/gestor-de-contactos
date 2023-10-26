@@ -45,7 +45,7 @@ namespace Gestor_de_contactos
                {
                 txtUsuario.Clear();
                 txtContraseña.Clear();
-                Panel principal = new Panel();
+                Home principal = new Home();
                 principal.ShowDialog();
                 }
 
@@ -72,6 +72,11 @@ namespace Gestor_de_contactos
         {
             Form crear = new frmCrearCuenta();
             crear.Show();
+        }
+
+        private void frmInicioDeSesion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

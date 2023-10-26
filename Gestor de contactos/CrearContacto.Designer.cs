@@ -241,7 +241,7 @@ namespace Gestor_de_contactos
             // 
             // btnCargarImagen
             // 
-            this.btnCargarImagen.Location = new System.Drawing.Point(205, 119);
+            this.btnCargarImagen.Location = new System.Drawing.Point(213, 119);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Size = new System.Drawing.Size(95, 23);
             this.btnCargarImagen.TabIndex = 23;

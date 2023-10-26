@@ -76,18 +76,18 @@
     </Compile>
     <Compile Include="crear_contacto.cs" />
     <Compile Include="crear_cuenta.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Inicio de sesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Inicio de sesion.Designer.cs">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio_de_sesion.cs" />
-    <Compile Include="Panel.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Panel.Designer.cs">
-      <DependentUpon>Panel.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,11 +97,11 @@
     <EmbeddedResource Include="CrearCuenta.resx">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Inicio de sesion.resx">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panel.resx">
-      <DependentUpon>Panel.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,15 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\585e4bf3cb11b227491c339a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Registro_de_contactos.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Registro_de_contactos_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Registro_de_contactos.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
