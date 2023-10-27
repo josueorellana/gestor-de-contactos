@@ -40,6 +40,7 @@ namespace Gestor_de_contactos
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.btnprueba = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).BeginInit();
@@ -48,6 +49,7 @@ namespace Gestor_de_contactos
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.pbOcultar);
             this.groupBox1.Controls.Add(this.pbMostrar);
@@ -58,6 +60,7 @@ namespace Gestor_de_contactos
             this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.lblUsuario);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox1.Location = new System.Drawing.Point(364, 97);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(321, 435);
@@ -70,7 +73,7 @@ namespace Gestor_de_contactos
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(86, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 125);
+            this.pictureBox1.Size = new System.Drawing.Size(130, 141);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -99,6 +102,7 @@ namespace Gestor_de_contactos
             // btnCrearCuenta
             // 
             this.btnCrearCuenta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearCuenta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCrearCuenta.Location = new System.Drawing.Point(45, 375);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
             this.btnCrearCuenta.Size = new System.Drawing.Size(233, 33);
@@ -110,6 +114,7 @@ namespace Gestor_de_contactos
             // btnLong_in
             // 
             this.btnLong_in.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLong_in.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLong_in.Location = new System.Drawing.Point(45, 336);
             this.btnLong_in.Name = "btnLong_in";
             this.btnLong_in.Size = new System.Drawing.Size(233, 33);
@@ -147,18 +152,34 @@ namespace Gestor_de_contactos
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblUsuario.Location = new System.Drawing.Point(8, 158);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(69, 19);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
+            // btnprueba
+            // 
+            this.btnprueba.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprueba.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnprueba.Location = new System.Drawing.Point(83, 226);
+            this.btnprueba.Name = "btnprueba";
+            this.btnprueba.Size = new System.Drawing.Size(233, 33);
+            this.btnprueba.TabIndex = 9;
+            this.btnprueba.Text = "Prueba";
+            this.btnprueba.UseVisualStyleBackColor = true;
+            this.btnprueba.Click += new System.EventHandler(this.btnprueba_Click);
+            // 
             // frmInicioDeSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.btnprueba);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "frmInicioDeSesion";
             this.Text = "Inicio de Sesion";
             this.Load += new System.EventHandler(this.frmInicioDeSesion_Load);
@@ -183,6 +204,7 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.PictureBox pbMostrar;
         private System.Windows.Forms.PictureBox pbOcultar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnprueba;
     }
 }
 

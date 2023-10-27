@@ -45,6 +45,7 @@ namespace Gestor_de_contactos
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.groupBox1.Controls.Add(this.lblContraseña);
             this.groupBox1.Controls.Add(this.lblCorreoElectronico);
             this.groupBox1.Controls.Add(this.lblApellidos);
@@ -55,6 +56,7 @@ namespace Gestor_de_contactos
             this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.txtApellidos);
             this.groupBox1.Controls.Add(this.txtNombres);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(38, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(448, 377);
@@ -100,7 +102,7 @@ namespace Gestor_de_contactos
             // 
             // btnCrear
             // 
-            this.btnCrear.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnCrear.BackColor = System.Drawing.Color.Blue;
             this.btnCrear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCrear.Location = new System.Drawing.Point(136, 249);
             this.btnCrear.Name = "btnCrear";
@@ -112,7 +114,7 @@ namespace Gestor_de_contactos
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnCancelar.BackColor = System.Drawing.Color.Blue;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCancelar.Location = new System.Drawing.Point(238, 249);
             this.btnCancelar.Name = "btnCancelar";
@@ -154,10 +156,11 @@ namespace Gestor_de_contactos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(566, 450);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "frmCrearCuenta";
             this.Text = "Crear Cuenta";
             this.groupBox1.ResumeLayout(false);

@@ -62,7 +62,8 @@ namespace Gestor_de_contactos
             // 
             this.lblNombres.AutoSize = true;
             this.lblNombres.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombres.Location = new System.Drawing.Point(49, 147);
+            this.lblNombres.Location = new System.Drawing.Point(65, 181);
+            this.lblNombres.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombres.Name = "lblNombres";
             this.lblNombres.Size = new System.Drawing.Size(64, 16);
             this.lblNombres.TabIndex = 0;
@@ -70,16 +71,18 @@ namespace Gestor_de_contactos
             // 
             // txtnombres
             // 
-            this.txtnombres.Location = new System.Drawing.Point(52, 164);
+            this.txtnombres.Location = new System.Drawing.Point(69, 202);
+            this.txtnombres.Margin = new System.Windows.Forms.Padding(4);
             this.txtnombres.Name = "txtnombres";
-            this.txtnombres.Size = new System.Drawing.Size(206, 20);
+            this.txtnombres.Size = new System.Drawing.Size(273, 22);
             this.txtnombres.TabIndex = 1;
             // 
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidos.Location = new System.Drawing.Point(292, 145);
+            this.lblApellidos.Location = new System.Drawing.Point(389, 178);
+            this.lblApellidos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellidos.Name = "lblApellidos";
             this.lblApellidos.Size = new System.Drawing.Size(67, 16);
             this.lblApellidos.TabIndex = 2;
@@ -87,16 +90,18 @@ namespace Gestor_de_contactos
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(295, 164);
+            this.txtApellidos.Location = new System.Drawing.Point(393, 202);
+            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(214, 20);
+            this.txtApellidos.Size = new System.Drawing.Size(284, 22);
             this.txtApellidos.TabIndex = 3;
             // 
             // lblCorreo1
             // 
             this.lblCorreo1.AutoSize = true;
             this.lblCorreo1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo1.Location = new System.Drawing.Point(49, 197);
+            this.lblCorreo1.Location = new System.Drawing.Point(65, 242);
+            this.lblCorreo1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo1.Name = "lblCorreo1";
             this.lblCorreo1.Size = new System.Drawing.Size(62, 16);
             this.lblCorreo1.TabIndex = 4;
@@ -104,23 +109,26 @@ namespace Gestor_de_contactos
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(52, 213);
+            this.txtCorreo.Location = new System.Drawing.Point(69, 262);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(206, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(273, 22);
             this.txtCorreo.TabIndex = 5;
             // 
             // txtCorreo2
             // 
-            this.txtCorreo2.Location = new System.Drawing.Point(295, 213);
+            this.txtCorreo2.Location = new System.Drawing.Point(393, 262);
+            this.txtCorreo2.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo2.Name = "txtCorreo2";
-            this.txtCorreo2.Size = new System.Drawing.Size(214, 20);
+            this.txtCorreo2.Size = new System.Drawing.Size(284, 22);
             this.txtCorreo2.TabIndex = 6;
             // 
             // lblTelefono1
             // 
             this.lblTelefono1.AutoSize = true;
             this.lblTelefono1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono1.Location = new System.Drawing.Point(49, 250);
+            this.lblTelefono1.Location = new System.Drawing.Point(65, 308);
+            this.lblTelefono1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefono1.Name = "lblTelefono1";
             this.lblTelefono1.Size = new System.Drawing.Size(74, 16);
             this.lblTelefono1.TabIndex = 7;
@@ -128,23 +136,26 @@ namespace Gestor_de_contactos
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(52, 266);
+            this.txtTelefono.Location = new System.Drawing.Point(69, 327);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(206, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(273, 22);
             this.txtTelefono.TabIndex = 8;
             // 
             // txtTelefono2
             // 
-            this.txtTelefono2.Location = new System.Drawing.Point(295, 266);
+            this.txtTelefono2.Location = new System.Drawing.Point(393, 327);
+            this.txtTelefono2.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono2.Name = "txtTelefono2";
-            this.txtTelefono2.Size = new System.Drawing.Size(214, 20);
+            this.txtTelefono2.Size = new System.Drawing.Size(284, 22);
             this.txtTelefono2.TabIndex = 9;
             // 
             // lblFechaDeNacimiento
             // 
             this.lblFechaDeNacimiento.AutoSize = true;
             this.lblFechaDeNacimiento.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaDeNacimiento.Location = new System.Drawing.Point(49, 303);
+            this.lblFechaDeNacimiento.Location = new System.Drawing.Point(65, 373);
+            this.lblFechaDeNacimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFechaDeNacimiento.Name = "lblFechaDeNacimiento";
             this.lblFechaDeNacimiento.Size = new System.Drawing.Size(142, 16);
             this.lblFechaDeNacimiento.TabIndex = 10;
@@ -153,16 +164,18 @@ namespace Gestor_de_contactos
             // dtpFechaDeNacimiento
             // 
             this.dtpFechaDeNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaDeNacimiento.Location = new System.Drawing.Point(52, 319);
+            this.dtpFechaDeNacimiento.Location = new System.Drawing.Point(69, 393);
+            this.dtpFechaDeNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaDeNacimiento.Name = "dtpFechaDeNacimiento";
-            this.dtpFechaDeNacimiento.Size = new System.Drawing.Size(144, 20);
+            this.dtpFechaDeNacimiento.Size = new System.Drawing.Size(191, 22);
             this.dtpFechaDeNacimiento.TabIndex = 11;
             // 
             // lblPais
             // 
             this.lblPais.AutoSize = true;
             this.lblPais.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPais.Location = new System.Drawing.Point(298, 303);
+            this.lblPais.Location = new System.Drawing.Point(397, 373);
+            this.lblPais.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPais.Name = "lblPais";
             this.lblPais.Size = new System.Drawing.Size(35, 16);
             this.lblPais.TabIndex = 12;
@@ -172,7 +185,8 @@ namespace Gestor_de_contactos
             // 
             this.lblCorreo2.AutoSize = true;
             this.lblCorreo2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo2.Location = new System.Drawing.Point(292, 194);
+            this.lblCorreo2.Location = new System.Drawing.Point(389, 239);
+            this.lblCorreo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo2.Name = "lblCorreo2";
             this.lblCorreo2.Size = new System.Drawing.Size(62, 16);
             this.lblCorreo2.TabIndex = 14;
@@ -182,7 +196,8 @@ namespace Gestor_de_contactos
             // 
             this.lblTelefono2.AutoSize = true;
             this.lblTelefono2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono2.Location = new System.Drawing.Point(292, 247);
+            this.lblTelefono2.Location = new System.Drawing.Point(389, 304);
+            this.lblTelefono2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefono2.Name = "lblTelefono2";
             this.lblTelefono2.Size = new System.Drawing.Size(74, 16);
             this.lblTelefono2.TabIndex = 15;
@@ -192,7 +207,8 @@ namespace Gestor_de_contactos
             // 
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.Location = new System.Drawing.Point(49, 351);
+            this.lblDireccion.Location = new System.Drawing.Point(65, 432);
+            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(68, 16);
             this.lblDireccion.TabIndex = 16;
@@ -200,16 +216,18 @@ namespace Gestor_de_contactos
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(52, 368);
+            this.txtDireccion.Location = new System.Drawing.Point(69, 453);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(457, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(608, 22);
             this.txtDireccion.TabIndex = 17;
             // 
             // lblEmpresa
             // 
             this.lblEmpresa.AutoSize = true;
             this.lblEmpresa.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.Location = new System.Drawing.Point(49, 401);
+            this.lblEmpresa.Location = new System.Drawing.Point(65, 494);
+            this.lblEmpresa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmpresa.Name = "lblEmpresa";
             this.lblEmpresa.Size = new System.Drawing.Size(63, 16);
             this.lblEmpresa.TabIndex = 18;
@@ -217,16 +235,18 @@ namespace Gestor_de_contactos
             // 
             // txtEmpresa
             // 
-            this.txtEmpresa.Location = new System.Drawing.Point(52, 418);
+            this.txtEmpresa.Location = new System.Drawing.Point(69, 514);
+            this.txtEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(175, 20);
+            this.txtEmpresa.Size = new System.Drawing.Size(232, 22);
             this.txtEmpresa.TabIndex = 19;
             // 
             // lblCargo
             // 
             this.lblCargo.AutoSize = true;
             this.lblCargo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.Location = new System.Drawing.Point(298, 402);
+            this.lblCargo.Location = new System.Drawing.Point(397, 495);
+            this.lblCargo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(46, 16);
             this.lblCargo.TabIndex = 20;
@@ -234,16 +254,19 @@ namespace Gestor_de_contactos
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(295, 418);
+            this.textBox2.Location = new System.Drawing.Point(393, 514);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 20);
+            this.textBox2.Size = new System.Drawing.Size(284, 22);
             this.textBox2.TabIndex = 21;
             // 
             // btnCargarImagen
             // 
-            this.btnCargarImagen.Location = new System.Drawing.Point(213, 119);
+            this.btnCargarImagen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCargarImagen.Location = new System.Drawing.Point(284, 146);
+            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargarImagen.Name = "btnCargarImagen";
-            this.btnCargarImagen.Size = new System.Drawing.Size(95, 23);
+            this.btnCargarImagen.Size = new System.Drawing.Size(127, 28);
             this.btnCargarImagen.TabIndex = 23;
             this.btnCargarImagen.Text = "Cargar Imagen";
             this.btnCargarImagen.UseVisualStyleBackColor = true;
@@ -251,31 +274,38 @@ namespace Gestor_de_contactos
             // 
             // btnCrear
             // 
+            this.btnCrear.BackColor = System.Drawing.Color.DarkRed;
             this.btnCrear.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCrear.Location = new System.Drawing.Point(82, 468);
+            this.btnCrear.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCrear.Location = new System.Drawing.Point(235, 576);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(80, 35);
+            this.btnCrear.Size = new System.Drawing.Size(107, 43);
             this.btnCrear.TabIndex = 24;
             this.btnCrear.Text = "Crear";
-            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnCancelar.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(330, 468);
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelar.Location = new System.Drawing.Point(392, 576);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(80, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(107, 43);
             this.btnCancelar.TabIndex = 25;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // pbCargarImagen
             // 
             this.pbCargarImagen.Image = global::Gestor_de_contactos.Properties.Resources._585e4bf3cb11b227491c339a;
-            this.pbCargarImagen.Location = new System.Drawing.Point(194, 3);
+            this.pbCargarImagen.Location = new System.Drawing.Point(259, 4);
+            this.pbCargarImagen.Margin = new System.Windows.Forms.Padding(4);
             this.pbCargarImagen.Name = "pbCargarImagen";
-            this.pbCargarImagen.Size = new System.Drawing.Size(127, 110);
+            this.pbCargarImagen.Size = new System.Drawing.Size(169, 135);
             this.pbCargarImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCargarImagen.TabIndex = 26;
             this.pbCargarImagen.TabStop = false;
@@ -291,16 +321,18 @@ namespace Gestor_de_contactos
             "Nicaragua",
             "Costa Rica ",
             "Panamá"});
-            this.cboPais.Location = new System.Drawing.Point(295, 322);
+            this.cboPais.Location = new System.Drawing.Point(393, 396);
+            this.cboPais.Margin = new System.Windows.Forms.Padding(4);
             this.cboPais.Name = "cboPais";
-            this.cboPais.Size = new System.Drawing.Size(121, 21);
+            this.cboPais.Size = new System.Drawing.Size(160, 24);
             this.cboPais.TabIndex = 27;
             // 
             // frmCrearContacto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 515);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.cboPais);
             this.Controls.Add(this.pbCargarImagen);
             this.Controls.Add(this.btnCancelar);
@@ -327,6 +359,10 @@ namespace Gestor_de_contactos
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.txtnombres);
             this.Controls.Add(this.lblNombres);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1261, 718);
             this.Name = "frmCrearContacto";
             this.Text = "Crear Contacto";
             ((System.ComponentModel.ISupportInitialize)(this.pbCargarImagen)).EndInit();

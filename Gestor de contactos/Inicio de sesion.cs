@@ -19,9 +19,7 @@ namespace Gestor_de_contactos
         {
             InitializeComponent();
         }
-
-
-
+            
         private void btnLong_in_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text != usuario || txtContraseña.Text != Password)
@@ -45,7 +43,7 @@ namespace Gestor_de_contactos
                {
                 txtUsuario.Clear();
                 txtContraseña.Clear();
-                Home principal = new Home();
+                MenuPrincipal principal = new MenuPrincipal();
                 principal.ShowDialog();
                 }
 
@@ -77,6 +75,12 @@ namespace Gestor_de_contactos
         private void frmInicioDeSesion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnprueba_Click(object sender, EventArgs e)
+        {
+            Form menuP = new MenuPrincipal();
+            menuP.Show();
         }
     }
 }
