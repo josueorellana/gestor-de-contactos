@@ -93,5 +93,10 @@ namespace Gestor_de_contactos
             MenuPrincipal.BringToFront();
             MenuPrincipal.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

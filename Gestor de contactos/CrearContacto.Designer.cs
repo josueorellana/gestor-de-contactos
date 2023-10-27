@@ -309,6 +309,7 @@ namespace Gestor_de_contactos
             this.pbCargarImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCargarImagen.TabIndex = 26;
             this.pbCargarImagen.TabStop = false;
+            this.pbCargarImagen.Click += new System.EventHandler(this.pbCargarImagen_Click);
             // 
             // cboPais
             // 
