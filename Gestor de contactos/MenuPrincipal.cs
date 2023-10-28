@@ -17,67 +17,14 @@ namespace Gestor_de_contactos
             InitializeComponent();
     
         }
-            
-
-    private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Home_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void agregarContacosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+               
 
         private void btnAgregarContactos_Click(object sender, EventArgs e)
         {
             openMenuPrincipalForm(new frmCrearContacto());
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
+       
 
             private Form ActiveForm = null;
         private void openMenuPrincipalForm(Form MenuPrincipal)
@@ -94,9 +41,19 @@ namespace Gestor_de_contactos
             MenuPrincipal.Show();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void btnCtsFrecuentes_Click(object sender, EventArgs e)
         {
+            openMenuPrincipalForm(new Contactos_frecuentes());
+        }
 
+        private void btnPapelera_Click(object sender, EventArgs e)
+        {
+            openMenuPrincipalForm(new Papelera());
+        }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            openMenuPrincipalForm(new Ayuda());
         }
     }
 }

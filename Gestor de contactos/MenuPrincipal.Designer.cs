@@ -65,7 +65,7 @@ namespace Gestor_de_contactos
             this.pictureajustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureajustes.TabIndex = 0;
             this.pictureajustes.TabStop = false;
-            this.pictureajustes.Click += new System.EventHandler(this.pictureBox1_Click);
+         
             // 
             // button2
             // 
@@ -95,7 +95,7 @@ namespace Gestor_de_contactos
             this.panelSideMenuLateral.Name = "panelSideMenuLateral";
             this.panelSideMenuLateral.Size = new System.Drawing.Size(210, 561);
             this.panelSideMenuLateral.TabIndex = 3;
-            this.panelSideMenuLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+          
             // 
             // pictureBox6
             // 
@@ -137,7 +137,6 @@ namespace Gestor_de_contactos
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // btnAyuda
             // 
@@ -156,7 +155,7 @@ namespace Gestor_de_contactos
             this.btnAyuda.TabIndex = 7;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.UseVisualStyleBackColor = true;
-            this.btnAyuda.Click += new System.EventHandler(this.button4_Click);
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnPapelera
             // 
@@ -175,6 +174,7 @@ namespace Gestor_de_contactos
             this.btnPapelera.TabIndex = 6;
             this.btnPapelera.Text = "Papelera";
             this.btnPapelera.UseVisualStyleBackColor = true;
+            this.btnPapelera.Click += new System.EventHandler(this.btnPapelera_Click);
             // 
             // btnCtsFrecuentes
             // 
@@ -194,6 +194,7 @@ namespace Gestor_de_contactos
             this.btnCtsFrecuentes.TabIndex = 5;
             this.btnCtsFrecuentes.Text = "Contactos frecuentes";
             this.btnCtsFrecuentes.UseVisualStyleBackColor = true;
+            this.btnCtsFrecuentes.Click += new System.EventHandler(this.btnCtsFrecuentes_Click);
             // 
             // btnAgregarContactos
             // 
@@ -233,7 +234,6 @@ namespace Gestor_de_contactos
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panelContenedor
             // 
@@ -243,7 +243,6 @@ namespace Gestor_de_contactos
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1300, 740);
             this.panelContenedor.TabIndex = 4;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // MenuPrincipal
             // 
@@ -258,7 +257,7 @@ namespace Gestor_de_contactos
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "MenuPrincipal";
             this.Text = "Panel";
-            this.Load += new System.EventHandler(this.Home_Load);
+           
             ((System.ComponentModel.ISupportInitialize)(this.pictureajustes)).EndInit();
             this.panelSideMenuLateral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
