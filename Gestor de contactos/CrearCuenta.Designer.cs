@@ -40,6 +40,8 @@ namespace Gestor_de_contactos
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
+            this.lblnumtel = new System.Windows.Forms.Label();
+            this.txtnumtel = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +51,8 @@ namespace Gestor_de_contactos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.groupBox1.Controls.Add(this.txtnumtel);
+            this.groupBox1.Controls.Add(this.lblnumtel);
             this.groupBox1.Controls.Add(this.lblContraseña);
             this.groupBox1.Controls.Add(this.lblCorreoElectronico);
             this.groupBox1.Controls.Add(this.lblApellidos);
@@ -72,7 +76,7 @@ namespace Gestor_de_contactos
             // 
             this.lblContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(80, 207);
+            this.lblContraseña.Location = new System.Drawing.Point(80, 252);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(67, 13);
             this.lblContraseña.TabIndex = 13;
@@ -113,7 +117,7 @@ namespace Gestor_de_contactos
             this.btnCrear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCrear.BackColor = System.Drawing.Color.Blue;
             this.btnCrear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCrear.Location = new System.Drawing.Point(136, 249);
+            this.btnCrear.Location = new System.Drawing.Point(140, 286);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(76, 38);
             this.btnCrear.TabIndex = 9;
@@ -126,7 +130,7 @@ namespace Gestor_de_contactos
             this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelar.BackColor = System.Drawing.Color.Blue;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancelar.Location = new System.Drawing.Point(238, 249);
+            this.btnCancelar.Location = new System.Drawing.Point(238, 284);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(73, 40);
             this.btnCancelar.TabIndex = 8;
@@ -137,7 +141,7 @@ namespace Gestor_de_contactos
             // txtContraseña
             // 
             this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtContraseña.Location = new System.Drawing.Point(153, 200);
+            this.txtContraseña.Location = new System.Drawing.Point(153, 245);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(158, 20);
             this.txtContraseña.TabIndex = 7;
@@ -166,6 +170,24 @@ namespace Gestor_de_contactos
             this.txtNombres.Size = new System.Drawing.Size(158, 20);
             this.txtNombres.TabIndex = 1;
             this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
+            // 
+            // lblnumtel
+            // 
+            this.lblnumtel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblnumtel.AutoSize = true;
+            this.lblnumtel.Location = new System.Drawing.Point(32, 209);
+            this.lblnumtel.Name = "lblnumtel";
+            this.lblnumtel.Size = new System.Drawing.Size(115, 13);
+            this.lblnumtel.TabIndex = 14;
+            this.lblnumtel.Text = "Numero de telefono";
+            // 
+            // txtnumtel
+            // 
+            this.txtnumtel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtnumtel.Location = new System.Drawing.Point(153, 202);
+            this.txtnumtel.Name = "txtnumtel";
+            this.txtnumtel.Size = new System.Drawing.Size(158, 20);
+            this.txtnumtel.TabIndex = 15;
             // 
             // frmCrearCuenta
             // 
@@ -198,5 +220,7 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.TextBox txtnumtel;
+        private System.Windows.Forms.Label lblnumtel;
     }
 }
