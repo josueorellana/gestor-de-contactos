@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Gestor_de_contactos
 {
-    public partial class Ayuda : Form
+    public partial class Home : Form
     {
-        public Ayuda()
+        public Home()
         {
             InitializeComponent();
         }
 
-        private void btnbuscarayuda_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void Ayuda_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

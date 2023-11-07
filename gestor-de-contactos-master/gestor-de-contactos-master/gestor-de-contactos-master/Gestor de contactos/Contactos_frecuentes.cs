@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Gestor_de_contactos
 {
-    public partial class Papelera : Form
+    public partial class Contactos_frecuentes : Form
     {
-        public Papelera()
+        public Contactos_frecuentes()
         {
             InitializeComponent();
-        }
-
-        private void panelayuda_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
