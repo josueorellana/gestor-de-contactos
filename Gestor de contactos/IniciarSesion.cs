@@ -84,5 +84,10 @@ namespace Gestor_de_contactos
             menuP.Show();
 
         }
+
+        private void lblContraseña_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

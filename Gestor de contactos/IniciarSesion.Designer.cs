@@ -148,6 +148,7 @@ namespace Gestor_de_contactos
             this.lblContraseña.Size = new System.Drawing.Size(98, 19);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "Contraseña";
+            this.lblContraseña.Click += new System.EventHandler(this.lblContraseña_Click);
             // 
             // txtUsuario
             // 
