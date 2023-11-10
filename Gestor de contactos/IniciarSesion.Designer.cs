@@ -73,7 +73,7 @@ namespace Gestor_de_contactos
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(96, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 141);
             this.pictureBox1.TabIndex = 8;
