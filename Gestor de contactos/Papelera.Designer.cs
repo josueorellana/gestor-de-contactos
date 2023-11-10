@@ -44,7 +44,7 @@ namespace Gestor_de_contactos
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(692, 12);
+            this.button1.Location = new System.Drawing.Point(714, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 22);
             this.button1.TabIndex = 0;
