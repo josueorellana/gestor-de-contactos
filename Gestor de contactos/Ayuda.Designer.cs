@@ -60,7 +60,7 @@ namespace Gestor_de_contactos
             // 
             // textBoxprgnta1
             // 
-            this.textBoxprgnta1.Location = new System.Drawing.Point(63, 44);
+            this.textBoxprgnta1.Location = new System.Drawing.Point(36, 44);
             this.textBoxprgnta1.Name = "textBoxprgnta1";
             this.textBoxprgnta1.Size = new System.Drawing.Size(464, 20);
             this.textBoxprgnta1.TabIndex = 1;
