@@ -176,7 +176,7 @@ namespace Gestor_de_contactos
             this.btnprueba.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnprueba.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprueba.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnprueba.Location = new System.Drawing.Point(216, 492);
+            this.btnprueba.Location = new System.Drawing.Point(202, 492);
             this.btnprueba.Name = "btnprueba";
             this.btnprueba.Size = new System.Drawing.Size(106, 33);
             this.btnprueba.TabIndex = 9;
