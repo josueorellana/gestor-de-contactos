@@ -89,5 +89,10 @@ namespace Gestor_de_contactos
         {
 
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
