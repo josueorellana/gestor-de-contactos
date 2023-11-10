@@ -30,6 +30,8 @@ namespace Gestor_de_contactos
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtnumtel = new System.Windows.Forms.TextBox();
+            this.lblnumtel = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblCorreoElectronico = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
@@ -40,8 +42,6 @@ namespace Gestor_de_contactos
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
-            this.lblnumtel = new System.Windows.Forms.Label();
-            this.txtnumtel = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,24 @@ namespace Gestor_de_contactos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese los datos requeridos :";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtnumtel
+            // 
+            this.txtnumtel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtnumtel.Location = new System.Drawing.Point(153, 202);
+            this.txtnumtel.Name = "txtnumtel";
+            this.txtnumtel.Size = new System.Drawing.Size(158, 20);
+            this.txtnumtel.TabIndex = 15;
+            // 
+            // lblnumtel
+            // 
+            this.lblnumtel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblnumtel.AutoSize = true;
+            this.lblnumtel.Location = new System.Drawing.Point(32, 209);
+            this.lblnumtel.Name = "lblnumtel";
+            this.lblnumtel.Size = new System.Drawing.Size(115, 13);
+            this.lblnumtel.TabIndex = 14;
+            this.lblnumtel.Text = "Numero de telefono";
             // 
             // lblContraseña
             // 
@@ -171,24 +189,6 @@ namespace Gestor_de_contactos
             this.txtNombres.TabIndex = 1;
             this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
             // 
-            // lblnumtel
-            // 
-            this.lblnumtel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblnumtel.AutoSize = true;
-            this.lblnumtel.Location = new System.Drawing.Point(32, 209);
-            this.lblnumtel.Name = "lblnumtel";
-            this.lblnumtel.Size = new System.Drawing.Size(115, 13);
-            this.lblnumtel.TabIndex = 14;
-            this.lblnumtel.Text = "Numero de telefono";
-            // 
-            // txtnumtel
-            // 
-            this.txtnumtel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtnumtel.Location = new System.Drawing.Point(153, 202);
-            this.txtnumtel.Name = "txtnumtel";
-            this.txtnumtel.Size = new System.Drawing.Size(158, 20);
-            this.txtnumtel.TabIndex = 15;
-            // 
             // frmCrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,6 +201,7 @@ namespace Gestor_de_contactos
             this.Name = "frmCrearCuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Cuenta";
+            this.Load += new System.EventHandler(this.frmCrearCuenta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

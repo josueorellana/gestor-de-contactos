@@ -77,5 +77,10 @@ namespace Gestor_de_contactos
         {
 
         }
+
+        private void frmCrearCuenta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
