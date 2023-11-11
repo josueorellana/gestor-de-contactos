@@ -264,7 +264,7 @@ namespace Gestor_de_contactos
             // btnCargarImagen
             // 
             this.btnCargarImagen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCargarImagen.Location = new System.Drawing.Point(284, 146);
+            this.btnCargarImagen.Location = new System.Drawing.Point(291, 146);
             this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Size = new System.Drawing.Size(127, 28);
