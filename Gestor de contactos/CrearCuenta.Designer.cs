@@ -190,11 +190,15 @@ namespace Gestor_de_contactos
             // 
             // grdDatosUsuarios
             // 
+            this.grdDatosUsuarios.AllowUserToAddRows = false;
+            this.grdDatosUsuarios.AllowUserToDeleteRows = false;
             this.grdDatosUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdDatosUsuarios.Location = new System.Drawing.Point(389, 36);
             this.grdDatosUsuarios.Name = "grdDatosUsuarios";
+            this.grdDatosUsuarios.ReadOnly = true;
             this.grdDatosUsuarios.Size = new System.Drawing.Size(527, 344);
-            this.grdDatosUsuarios.TabIndex = 1;
+            this.grdDatosUsuarios.TabIndex = 3;
+            this.grdDatosUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosUsuarios_CellContentClick);
             // 
             // frmCrearCuenta
             // 

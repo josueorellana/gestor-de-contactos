@@ -65,6 +65,8 @@ namespace Gestor_de_contactos
                this.Close();
 
             }
+
+
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -91,6 +93,10 @@ namespace Gestor_de_contactos
             {
                 grdDatosUsuarios.DataSource = miDs.Tables["Usuario"].DefaultView;
             }
-        
+
+        private void grdDatosUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
