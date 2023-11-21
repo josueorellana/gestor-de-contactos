@@ -13,6 +13,9 @@ namespace Gestor_de_contactos
 {
     public partial class frmCrearCuenta : Form
     {
+        crear_cuenta objConexion = new crear_cuenta();
+        DataSet miDs = new DataSet();
+
         public frmCrearCuenta()
         {
             InitializeComponent();
@@ -80,7 +83,14 @@ namespace Gestor_de_contactos
 
         private void frmCrearCuenta_Load(object sender, EventArgs e)
         {
-
+            miDs.Clear();
+            miDs = objConexion.obtenerDatos();
+            mostrarDatos();
         }
+            private void mostrarDatos()
+            {
+                grdDatosUsuarios.DataSource = miDs.Tables["Usuario"].DefaultView;
+            }
+        
     }
 }
