@@ -20,44 +20,44 @@ namespace Gestor_de_contactos
         {
             InitializeComponent();
         }
-            
+
         private void btnLong_in_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text != usuario || txtContraseña.Text != Password)
-            { 
-                  if (txtUsuario.Text != usuario)
-                { 
-                    MessageBox.Show("Usuario incorrecto","Datos equivocados",MessageBoxButtons.RetryCancel,
+            {
+                if (txtUsuario.Text != usuario)
+                {
+                    MessageBox.Show("Usuario incorrecto", "Datos equivocados", MessageBoxButtons.RetryCancel,
                         MessageBoxIcon.Error);
-                   txtUsuario.Clear();
+                    txtUsuario.Clear();
 
-                 }  
-                  if (txtContraseña.Text != Password)
+                }
+                if (txtContraseña.Text != Password)
                 {
                     MessageBox.Show("Contraseña incorrecta", "Datos equivocados", MessageBoxButtons.RetryCancel,
                              MessageBoxIcon.Error);
                     txtContraseña.Clear();
-                     }
-                 }
+                }
+            }
 
             else
-               {
+            {
                 txtUsuario.Clear();
                 txtContraseña.Clear();
                 MenuPrincipal principal = new MenuPrincipal();
                 principal.ShowDialog();
-                }
+            }
 
 
         }
-        
 
-        
+
+
         private void pbMostrar_Click(object sender, EventArgs e)
         {
             pbOcultar.BringToFront();
             txtContraseña.PasswordChar = '*';
-                       
+
         }
 
         private void pbOcultar_Click(object sender, EventArgs e)
@@ -69,8 +69,8 @@ namespace Gestor_de_contactos
 
         private void btnCrearCuenta_Click(object sender, EventArgs e)
         {
-            Form crear = new frmCrearCuenta();
-            crear.Show();
+            CrearCuenta ver = new CrearCuenta();
+            ver.Show();
         }
 
         private void frmInicioDeSesion_Load(object sender, EventArgs e)
