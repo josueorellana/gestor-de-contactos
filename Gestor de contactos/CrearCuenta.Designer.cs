@@ -49,10 +49,13 @@ namespace Gestor_de_contactos
             // 
             // grdDatosUsuarios
             // 
+            this.grdDatosUsuarios.AllowUserToAddRows = false;
+            this.grdDatosUsuarios.AllowUserToDeleteRows = false;
             this.grdDatosUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdDatosUsuarios.Location = new System.Drawing.Point(357, 12);
+            this.grdDatosUsuarios.Location = new System.Drawing.Point(384, 32);
             this.grdDatosUsuarios.Name = "grdDatosUsuarios";
-            this.grdDatosUsuarios.Size = new System.Drawing.Size(435, 377);
+            this.grdDatosUsuarios.ReadOnly = true;
+            this.grdDatosUsuarios.Size = new System.Drawing.Size(507, 342);
             this.grdDatosUsuarios.TabIndex = 0;
             // 
             // groupBox1
@@ -70,6 +73,7 @@ namespace Gestor_de_contactos
             this.groupBox1.Controls.Add(this.txtApellido);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(339, 377);
@@ -79,27 +83,30 @@ namespace Gestor_de_contactos
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(175, 306);
+            this.btnCancelar.BackColor = System.Drawing.Color.Blue;
+            this.btnCancelar.Location = new System.Drawing.Point(222, 306);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(73, 40);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(21, 306);
+            this.btnCrear.BackColor = System.Drawing.Color.Blue;
+            this.btnCrear.Location = new System.Drawing.Point(117, 306);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(73, 40);
             this.btnCrear.TabIndex = 10;
             this.btnCrear.Text = "Crear";
-            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(18, 240);
+            this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPassword.Location = new System.Drawing.Point(60, 224);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(67, 13);
             this.lblPassword.TabIndex = 9;
@@ -108,7 +115,8 @@ namespace Gestor_de_contactos
             // lblNumeroDeTelefono
             // 
             this.lblNumeroDeTelefono.AutoSize = true;
-            this.lblNumeroDeTelefono.Location = new System.Drawing.Point(12, 198);
+            this.lblNumeroDeTelefono.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblNumeroDeTelefono.Location = new System.Drawing.Point(18, 180);
             this.lblNumeroDeTelefono.Name = "lblNumeroDeTelefono";
             this.lblNumeroDeTelefono.Size = new System.Drawing.Size(115, 13);
             this.lblNumeroDeTelefono.TabIndex = 8;
@@ -117,7 +125,8 @@ namespace Gestor_de_contactos
             // lblCorreoElectronico
             // 
             this.lblCorreoElectronico.AutoSize = true;
-            this.lblCorreoElectronico.Location = new System.Drawing.Point(18, 152);
+            this.lblCorreoElectronico.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCorreoElectronico.Location = new System.Drawing.Point(18, 137);
             this.lblCorreoElectronico.Name = "lblCorreoElectronico";
             this.lblCorreoElectronico.Size = new System.Drawing.Size(115, 13);
             this.lblCorreoElectronico.TabIndex = 7;
@@ -126,7 +135,8 @@ namespace Gestor_de_contactos
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(18, 107);
+            this.lblApellido.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblApellido.Location = new System.Drawing.Point(66, 91);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(61, 13);
             this.lblApellido.TabIndex = 6;
@@ -135,7 +145,8 @@ namespace Gestor_de_contactos
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(18, 51);
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblNombre.Location = new System.Drawing.Point(78, 48);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(49, 13);
             this.lblNombre.TabIndex = 5;
@@ -143,28 +154,28 @@ namespace Gestor_de_contactos
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(145, 240);
+            this.txtPassword.Location = new System.Drawing.Point(145, 224);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(150, 20);
             this.txtPassword.TabIndex = 4;
             // 
             // txtNumeroDeTelefono
             // 
-            this.txtNumeroDeTelefono.Location = new System.Drawing.Point(145, 195);
+            this.txtNumeroDeTelefono.Location = new System.Drawing.Point(145, 180);
             this.txtNumeroDeTelefono.Name = "txtNumeroDeTelefono";
             this.txtNumeroDeTelefono.Size = new System.Drawing.Size(150, 20);
             this.txtNumeroDeTelefono.TabIndex = 3;
             // 
             // txtCorreoElectronico
             // 
-            this.txtCorreoElectronico.Location = new System.Drawing.Point(145, 149);
+            this.txtCorreoElectronico.Location = new System.Drawing.Point(145, 134);
             this.txtCorreoElectronico.Name = "txtCorreoElectronico";
             this.txtCorreoElectronico.Size = new System.Drawing.Size(150, 20);
             this.txtCorreoElectronico.TabIndex = 2;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(145, 107);
+            this.txtApellido.Location = new System.Drawing.Point(145, 88);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(150, 20);
             this.txtApellido.TabIndex = 1;
@@ -180,12 +191,12 @@ namespace Gestor_de_contactos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(919, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdDatosUsuarios);
             this.Name = "CrearCuenta";
-            this.Text = "prueba";
+            this.Text = "Crear Cuenta";
             this.Load += new System.EventHandler(this.prueba_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).EndInit();
             this.groupBox1.ResumeLayout(false);
