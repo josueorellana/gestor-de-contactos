@@ -4,9 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Data.SqlClient;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
+using System.Data.SqlClient;
 
 namespace Gestor_de_contactos
 {
@@ -23,25 +24,25 @@ namespace Gestor_de_contactos
 
         private void prueba_Load(object sender, EventArgs e)
         {
-            
+
             miDs.Clear();
             miDs = objConexion.obtenerDatos();
             miTabla = miDs.Tables["Usuario"];
             miTabla.PrimaryKey = new DataColumn[] { miTabla.Columns["IdUsuario"] };
             mostrarDatos();
-        }    
-            private void mostrarDatos()
-            {
-                grdDatosUsuarios.DataSource = miTabla.DefaultView;
-            }
+        }
+        private void mostrarDatos()
+        {
+            grdDatosUsuarios.DataSource = miTabla.DefaultView;
+        }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Text;
-            string correoElectronico = txtCorreoElectronico.Text;
-            string numeroTelefono = txtNumeroDeTelefono.Text;
-            string contrasena = txtPassword.Text;
+            string correo = txtCorreoElectronico.Text;
+            string numerodetelefono = txtNumeroDeTelefono.Text;
+            string password = txtPassword.Text;
 
             // Valida la información proporcionada por el usuario
             if (nombre.Length == 0)
@@ -56,19 +57,19 @@ namespace Gestor_de_contactos
                 return;
             }
 
-            if (!correoElectronico.Contains("@"))
+            if (!correo.Contains("@"))
             {
                 MessageBox.Show("El correo electrónico debe contener un símbolo @.");
                 return;
             }
 
-            if (numeroTelefono.Length < 8)
+            if (numerodetelefono.Length < 8)
             {
                 MessageBox.Show("El número de teléfono debe tener al menos 10 dígitos.");
                 return;
             }
 
-            if (contrasena.Length < 8)
+            if (password.Length < 8)
             {
                 MessageBox.Show("La contraseña debe tener al menos 8 caracteres.");
                 return;
@@ -77,19 +78,35 @@ namespace Gestor_de_contactos
             // Crea la cuenta de usuario
             SqlConnection conexion = new SqlConnection("Data Source=localhost;Initial Catalog=usuarios;Integrated Security=True");
             conexion.Open();
-            SqlCommand comando = new SqlCommand("INSERT INTO Usuarios (Nombre, Apellido, CorreoElectronico, NumeroTelefono, Contrasena) VALUES (@nombre, @apellido, @correoElectronico, @numeroTelefono, @contrasena)", conexion);
+            SqlCommand comando = new SqlCommand("INSERT INTO Usuarios (Nombre, Apellido, Correo, Numerodetelefono, password) VALUES (@nombre, @apellido, @correo, @numerodetelefono, @password)", conexion);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@apellido", apellido);
-            comando.Parameters.AddWithValue("@correoElectronico", correoElectronico);
-            comando.Parameters.AddWithValue("@numeroTelefono", numeroTelefono);
-            comando.Parameters.AddWithValue("@contrasena", contrasena);
+            comando.Parameters.AddWithValue("@correo", correo);
+            comando.Parameters.AddWithValue("@numerodetelefono", numerodetelefono);
+            comando.Parameters.AddWithValue("@password", password);
             comando.ExecuteNonQuery();
             conexion.Close();
+
+            // Actualiza el DataTable
+            DataRow nuevaFila = miTabla.NewRow();
+            nuevaFila["Nombre"] = nombre;
+            nuevaFila["Apellido"] = apellido;
+            nuevaFila["Correo"] = correo;
+            nuevaFila["Numerodetelefono"] = numerodetelefono;
+            nuevaFila["Password"] = password;
+            miTabla.Rows.Add(nuevaFila);
+
+            // Actualiza la interfaz de usuario
+            mostrarDatos();
 
             // Muestra un mensaje de éxito
             MessageBox.Show("La cuenta de usuario se creó correctamente.");
         }
-    
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
-    
+
 }
