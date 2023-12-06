@@ -75,7 +75,7 @@ namespace Gestor_de_contactos
                 return;
             }
 
-            // Crea la cuenta de usuario
+            // Crea la cuenta de usuario y
             SqlConnection conexion = new SqlConnection (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Usuarios.mdf;Integrated Security=True");
             conexion.Open();
             SqlCommand comando = new SqlCommand("INSERT INTO Usuario (nombre, apellido, correo, numerodetelefono, password) VALUES (@nombre, @apellido, @correo, @numerodetelefono, @password)", conexion);
