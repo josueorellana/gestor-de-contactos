@@ -125,7 +125,7 @@ namespace Gestor_de_contactos
             this.btnLong_in.Name = "btnLong_in";
             this.btnLong_in.Size = new System.Drawing.Size(233, 33);
             this.btnLong_in.TabIndex = 4;
-            this.btnLong_in.Text = "Long in";
+            this.btnLong_in.Text = "Iniciar sesion";
             this.btnLong_in.UseVisualStyleBackColor = true;
             this.btnLong_in.Click += new System.EventHandler(this.btnLong_in_Click);
             // 
