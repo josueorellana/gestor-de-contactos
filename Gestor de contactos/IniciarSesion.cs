@@ -13,7 +13,7 @@ namespace Gestor_de_contactos
 {
     public partial class frmInicioDeSesion : Form
     {
-        string usuario = "Usuario";
+        string correo = "Correo";
         string Password = "Password";
 
         public frmInicioDeSesion()
@@ -23,9 +23,9 @@ namespace Gestor_de_contactos
 
         private void btnLong_in_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text != usuario || txtContraseña.Text != Password)
+            if (txtcorreo.Text != correo || txtContraseña.Text != Password)
             {
-                if (txtUsuario.Text != usuario)
+                if (txtUsuario.Text != correo)
                 {
                     MessageBox.Show("Usuario incorrecto", "Datos equivocados", MessageBoxButtons.RetryCancel,
                         MessageBoxIcon.Error);
