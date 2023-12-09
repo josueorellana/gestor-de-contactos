@@ -41,5 +41,10 @@ namespace Gestor_de_contactos
         {
 
         }
+
+        private void frmCrearContacto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

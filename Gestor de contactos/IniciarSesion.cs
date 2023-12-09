@@ -23,7 +23,7 @@ namespace Gestor_de_contactos
 
         private void btnLong_in_Click(object sender, EventArgs e)
         {
-            if (txtcorreo.Text != correo || txtContraseña.Text != Password)
+            if (txtUsuario.Text != correo || txtContraseña.Text != Password)
             {
                 if (txtUsuario.Text != correo)
                 {

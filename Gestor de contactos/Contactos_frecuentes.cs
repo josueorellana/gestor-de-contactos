@@ -21,5 +21,10 @@ namespace Gestor_de_contactos
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
