@@ -59,36 +59,42 @@ namespace Gestor_de_contactos
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
+
+        }
+        public static class UsuarioActual
+        {
+            public static int Id { get; set; }
         }
 
         private void btnIniciarsesion_Click_1(object sender, EventArgs e)
         {
+            using (SqlConnection conexion = new SqlConnection(crear_cuenta.ObtenerCadenaConexion()))
             {
-                using (SqlConnection conexion = new SqlConnection(crear_cuenta.ObtenerCadenaConexion()))
+                conexion.Open();
+
+                string query = "SELECT Id FROM Usuario WHERE correo = @correo AND password = @contrasena";
+                SqlCommand cmd = new SqlCommand(query, conexion);
+
+                // Configurar parámetros
+                cmd.Parameters.AddWithValue("@correo", txtCorreo.Text);
+                cmd.Parameters.AddWithValue("@contrasena", txtContrasena.Text);
+
+                // Ejecutar la consulta
+                var result = cmd.ExecuteScalar();
+
+                if (result != null)
                 {
-                    conexion.Open();
+                    // Almacenar el ID del usuario actual
+                    UsuarioActual.Id = (int)result;
 
-                    string query = "SELECT COUNT(*) FROM Usuario WHERE correo = @correo AND password = @contrasena";
-                    SqlCommand cmd = new SqlCommand(query, conexion);
-
-                    // Configurar parámetros
-                    cmd.Parameters.AddWithValue("@correo", txtCorreo.Text);
-                    cmd.Parameters.AddWithValue("@contrasena", txtContrasena.Text);
-
-                    // Ejecutar la consulta
-                    int count = (int)cmd.ExecuteScalar();
-
-                    if (count > 0)
-                    {
-                        // Iniciar sesión exitosa, abrir el formulario MenuPrincipal
-                        MenuPrincipal menup = new MenuPrincipal();
-                        menup.Show();
-                        this.Hide(); // Ocultar el formulario de inicio de sesión
-                    }
-                    else
-                    {
-                        MessageBox.Show("Credenciales incorrectas. Por favor, inténtelo de nuevo.");
-                    }
+                    // Iniciar sesión exitosa, abrir el formulario MenuPrincipal
+                    MenuPrincipal menup = new MenuPrincipal();
+                    menup.Show();
+                    this.Hide(); // Ocultar el formulario de inicio de sesión
+                }
+                else
+                {
+                    MessageBox.Show("Credenciales incorrectas. Por favor, inténtelo de nuevo.");
                 }
             }
         }

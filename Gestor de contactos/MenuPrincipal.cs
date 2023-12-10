@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Gestor_de_contactos
 {
@@ -42,6 +43,10 @@ namespace Gestor_de_contactos
             MenuPrincipal.BringToFront();
             MenuPrincipal.Show();
         }
+        public static class UsuarioActual
+        {
+            public static int Id { get; set; }
+        }
 
         private void btnCtsFrecuentes_Click(object sender, EventArgs e)
         {
@@ -68,6 +73,30 @@ namespace Gestor_de_contactos
             this.FormBorderStyle = FormBorderStyle.None;
 
             this.WindowState = FormWindowState.Maximized;
+            int idUsuarioActual = UsuarioActual.Id;
+
+            // Utiliza el ID del usuario actual para obtener y mostrar los contactos
+            DataSet contactosUsuario = ObtenerContactosPorUsuario(idUsuarioActual);
+
+            // Lógica para mostrar los contactos en tu formulario
+            // ...
+        }
+        private DataSet ObtenerContactosPorUsuario(int idUsuario)
+        {
+            using (SqlConnection conexion = new SqlConnection(crear_cuenta.ObtenerCadenaConexion()))
+            {
+                conexion.Open();
+
+                string query = "SELECT * FROM Contacto WHERE IdUsuario = @idUsuario";
+                SqlCommand cmd = new SqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataSet dataSet = new DataSet();
+                adapter.Fill(dataSet, "Contacto");
+
+                return dataSet;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
