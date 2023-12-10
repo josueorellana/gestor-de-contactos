@@ -167,9 +167,9 @@ namespace Gestor_de_contactos
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblUsuario.Location = new System.Drawing.Point(8, 158);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(69, 19);
+            this.lblUsuario.Size = new System.Drawing.Size(143, 19);
             this.lblUsuario.TabIndex = 0;
-            this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.Text = "Correo Electronic";
             // 
             // btnprueba
             // 
