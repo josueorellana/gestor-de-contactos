@@ -36,12 +36,10 @@ namespace Gestor_de_contactos
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblNumeroDeTelefono = new System.Windows.Forms.Label();
             this.lblCorreoElectronico = new System.Windows.Forms.Label();
-            this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtNumeroDeTelefono = new System.Windows.Forms.TextBox();
             this.txtCorreoElectronico = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -65,12 +63,10 @@ namespace Gestor_de_contactos
             this.groupBox1.Controls.Add(this.lblPassword);
             this.groupBox1.Controls.Add(this.lblNumeroDeTelefono);
             this.groupBox1.Controls.Add(this.lblCorreoElectronico);
-            this.groupBox1.Controls.Add(this.lblApellido);
             this.groupBox1.Controls.Add(this.lblNombre);
             this.groupBox1.Controls.Add(this.txtPassword);
             this.groupBox1.Controls.Add(this.txtNumeroDeTelefono);
             this.groupBox1.Controls.Add(this.txtCorreoElectronico);
-            this.groupBox1.Controls.Add(this.txtApellido);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -107,7 +103,7 @@ namespace Gestor_de_contactos
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPassword.Location = new System.Drawing.Point(60, 224);
+            this.lblPassword.Location = new System.Drawing.Point(72, 224);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(67, 13);
             this.lblPassword.TabIndex = 9;
@@ -117,7 +113,7 @@ namespace Gestor_de_contactos
             // 
             this.lblNumeroDeTelefono.AutoSize = true;
             this.lblNumeroDeTelefono.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNumeroDeTelefono.Location = new System.Drawing.Point(18, 180);
+            this.lblNumeroDeTelefono.Location = new System.Drawing.Point(24, 183);
             this.lblNumeroDeTelefono.Name = "lblNumeroDeTelefono";
             this.lblNumeroDeTelefono.Size = new System.Drawing.Size(115, 13);
             this.lblNumeroDeTelefono.TabIndex = 8;
@@ -127,27 +123,17 @@ namespace Gestor_de_contactos
             // 
             this.lblCorreoElectronico.AutoSize = true;
             this.lblCorreoElectronico.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCorreoElectronico.Location = new System.Drawing.Point(18, 137);
+            this.lblCorreoElectronico.Location = new System.Drawing.Point(24, 147);
             this.lblCorreoElectronico.Name = "lblCorreoElectronico";
             this.lblCorreoElectronico.Size = new System.Drawing.Size(115, 13);
             this.lblCorreoElectronico.TabIndex = 7;
             this.lblCorreoElectronico.Text = "Correo Electronico";
             // 
-            // lblApellido
-            // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblApellido.Location = new System.Drawing.Point(66, 91);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(61, 13);
-            this.lblApellido.TabIndex = 6;
-            this.lblApellido.Text = "Apellidos";
-            // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNombre.Location = new System.Drawing.Point(78, 48);
+            this.lblNombre.Location = new System.Drawing.Point(90, 114);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(49, 13);
             this.lblNombre.TabIndex = 5;
@@ -155,35 +141,28 @@ namespace Gestor_de_contactos
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(145, 224);
+            this.txtPassword.Location = new System.Drawing.Point(145, 217);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(150, 20);
             this.txtPassword.TabIndex = 4;
             // 
             // txtNumeroDeTelefono
             // 
-            this.txtNumeroDeTelefono.Location = new System.Drawing.Point(145, 180);
+            this.txtNumeroDeTelefono.Location = new System.Drawing.Point(145, 176);
             this.txtNumeroDeTelefono.Name = "txtNumeroDeTelefono";
             this.txtNumeroDeTelefono.Size = new System.Drawing.Size(150, 20);
             this.txtNumeroDeTelefono.TabIndex = 3;
             // 
             // txtCorreoElectronico
             // 
-            this.txtCorreoElectronico.Location = new System.Drawing.Point(145, 134);
+            this.txtCorreoElectronico.Location = new System.Drawing.Point(145, 140);
             this.txtCorreoElectronico.Name = "txtCorreoElectronico";
             this.txtCorreoElectronico.Size = new System.Drawing.Size(150, 20);
             this.txtCorreoElectronico.TabIndex = 2;
             // 
-            // txtApellido
-            // 
-            this.txtApellido.Location = new System.Drawing.Point(145, 88);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(150, 20);
-            this.txtApellido.TabIndex = 1;
-            // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(145, 48);
+            this.txtNombre.Location = new System.Drawing.Point(145, 107);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(150, 20);
             this.txtNombre.TabIndex = 0;
@@ -213,12 +192,10 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblNumeroDeTelefono;
         private System.Windows.Forms.Label lblCorreoElectronico;
-        private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtNumeroDeTelefono;
         private System.Windows.Forms.TextBox txtCorreoElectronico;
-        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCrear;

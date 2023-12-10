@@ -38,25 +38,17 @@ namespace Gestor_de_contactos
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
+            string nombreyapellido = txtNombre.Text;
             string correo = txtCorreoElectronico.Text;
             string numerodetelefono = txtNumeroDeTelefono.Text;
             string password = txtPassword.Text;
 
             // Valida la información proporcionada por el usuario
-            if (nombre.Length == 0)
+            if (nombreyapellido.Length == 0)
             {
                 MessageBox.Show("Debes ingresar un nombre.");
                 return;
             }
-
-            if (apellido.Length == 0)
-            {
-                MessageBox.Show("Debes ingresar un apellido.");
-                return;
-            }
-
             if (!correo.Contains("@"))
             {
                 MessageBox.Show("El correo electrónico debe contener un símbolo @.");
@@ -78,9 +70,8 @@ namespace Gestor_de_contactos
             // Crea la cuenta de usuario y
             SqlConnection conexion = new SqlConnection (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Usuarios.mdf;Integrated Security=True");
             conexion.Open();
-            SqlCommand comando = new SqlCommand("INSERT INTO Usuario (nombre, apellido, correo, numerodetelefono, password) VALUES (@nombre, @apellido, @correo, @numerodetelefono, @password)", conexion);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@apellido", apellido);
+            SqlCommand comando = new SqlCommand("INSERT INTO Usuario (nombre, correo, numerodetelefono, password) VALUES (@nombre, @apellido, @correo, @numerodetelefono, @password)", conexion);
+            comando.Parameters.AddWithValue("@nombre", nombreyapellido);
             comando.Parameters.AddWithValue("@correo", correo);
             comando.Parameters.AddWithValue("@numerodetelefono", numerodetelefono);
             comando.Parameters.AddWithValue("@password", password);
@@ -89,8 +80,7 @@ namespace Gestor_de_contactos
 
             // Actualiza el DataTable
             DataRow nuevaFila = miTabla.NewRow();
-            nuevaFila["nombre"] = nombre;
-            nuevaFila["apellido"] = apellido;
+            nuevaFila["nombre"] = nombreyapellido;
             nuevaFila["correo"] = correo;
             nuevaFila["numerodetelefono"] = numerodetelefono;
             nuevaFila["password"] = password;
