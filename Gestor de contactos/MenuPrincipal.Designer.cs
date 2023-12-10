@@ -89,7 +89,7 @@ namespace Gestor_de_contactos
             // ptbcerrarsesion
             // 
             this.ptbcerrarsesion.Image = ((System.Drawing.Image)(resources.GetObject("ptbcerrarsesion.Image")));
-            this.ptbcerrarsesion.Location = new System.Drawing.Point(66, 631);
+            this.ptbcerrarsesion.Location = new System.Drawing.Point(71, 631);
             this.ptbcerrarsesion.Name = "ptbcerrarsesion";
             this.ptbcerrarsesion.Size = new System.Drawing.Size(41, 38);
             this.ptbcerrarsesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
