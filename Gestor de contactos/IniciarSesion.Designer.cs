@@ -35,10 +35,10 @@ namespace Gestor_de_contactos
             this.pbOcultar = new System.Windows.Forms.PictureBox();
             this.pbMostrar = new System.Windows.Forms.PictureBox();
             this.btnCrearCuenta = new System.Windows.Forms.Button();
-            this.btnLong_in = new System.Windows.Forms.Button();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.btnIniciarsesion = new System.Windows.Forms.Button();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnprueba = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -55,10 +55,10 @@ namespace Gestor_de_contactos
             this.groupBox1.Controls.Add(this.pbOcultar);
             this.groupBox1.Controls.Add(this.pbMostrar);
             this.groupBox1.Controls.Add(this.btnCrearCuenta);
-            this.groupBox1.Controls.Add(this.btnLong_in);
-            this.groupBox1.Controls.Add(this.txtContraseña);
+            this.groupBox1.Controls.Add(this.btnIniciarsesion);
+            this.groupBox1.Controls.Add(this.txtContrasena);
             this.groupBox1.Controls.Add(this.lblContraseña);
-            this.groupBox1.Controls.Add(this.txtUsuario);
+            this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.lblUsuario);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -116,27 +116,27 @@ namespace Gestor_de_contactos
             this.btnCrearCuenta.UseVisualStyleBackColor = true;
             this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
-            // btnLong_in
+            // btnIniciarsesion
             // 
-            this.btnLong_in.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnLong_in.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLong_in.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLong_in.Location = new System.Drawing.Point(34, 308);
-            this.btnLong_in.Name = "btnLong_in";
-            this.btnLong_in.Size = new System.Drawing.Size(233, 33);
-            this.btnLong_in.TabIndex = 4;
-            this.btnLong_in.Text = "Iniciar sesion";
-            this.btnLong_in.UseVisualStyleBackColor = true;
-            this.btnLong_in.Click += new System.EventHandler(this.btnLong_in_Click);
+            this.btnIniciarsesion.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnIniciarsesion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarsesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIniciarsesion.Location = new System.Drawing.Point(34, 308);
+            this.btnIniciarsesion.Name = "btnIniciarsesion";
+            this.btnIniciarsesion.Size = new System.Drawing.Size(233, 33);
+            this.btnIniciarsesion.TabIndex = 4;
+            this.btnIniciarsesion.Text = "Iniciar sesion";
+            this.btnIniciarsesion.UseVisualStyleBackColor = true;
+            this.btnIniciarsesion.Click += new System.EventHandler(this.btnIniciarsesion_Click_1);
             // 
-            // txtContraseña
+            // txtContrasena
             // 
-            this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtContraseña.Location = new System.Drawing.Point(12, 245);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(266, 22);
-            this.txtContraseña.TabIndex = 3;
+            this.txtContrasena.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtContrasena.Location = new System.Drawing.Point(12, 245);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.Size = new System.Drawing.Size(266, 22);
+            this.txtContrasena.TabIndex = 3;
             // 
             // lblContraseña
             // 
@@ -150,14 +150,14 @@ namespace Gestor_de_contactos
             this.lblContraseña.Text = "Contraseña";
             this.lblContraseña.Click += new System.EventHandler(this.lblContraseña_Click);
             // 
-            // txtUsuario
+            // txtCorreo
             // 
-            this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtUsuario.Location = new System.Drawing.Point(12, 180);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(266, 22);
-            this.txtUsuario.TabIndex = 1;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCorreo.Location = new System.Drawing.Point(12, 180);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(266, 22);
+            this.txtCorreo.TabIndex = 1;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // lblUsuario
             // 
@@ -210,10 +210,10 @@ namespace Gestor_de_contactos
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCrearCuenta;
-        private System.Windows.Forms.Button btnLong_in;
-        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Button btnIniciarsesion;
+        private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label lblContraseña;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pbMostrar;
         private System.Windows.Forms.PictureBox pbOcultar;

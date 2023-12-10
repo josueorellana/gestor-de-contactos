@@ -26,7 +26,7 @@ namespace Gestor_de_contactos
         {
 
             miDs.Clear();
-            miDs = objConexion.obtenerDatos();
+            miDs = objConexion.ObtenerDatos();
             miTabla = miDs.Tables["Usuario"];
             miTabla.PrimaryKey = new DataColumn[] { miTabla.Columns["IdUsuario"] };
             mostrarDatos();
@@ -70,8 +70,8 @@ namespace Gestor_de_contactos
             // Crea la cuenta de usuario y
             SqlConnection conexion = new SqlConnection (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Usuarios.mdf;Integrated Security=True");
             conexion.Open();
-            SqlCommand comando = new SqlCommand("INSERT INTO Usuario (nombre, correo, numerodetelefono, password) VALUES (@nombre, @apellido, @correo, @numerodetelefono, @password)", conexion);
-            comando.Parameters.AddWithValue("@nombre", nombreyapellido);
+            SqlCommand comando = new SqlCommand("INSERT INTO Usuario (nombreyapellido, correo, numerodetelefono, password) VALUES (@nombreyapellido, @correo, @numerodetelefono, @password)", conexion);
+            comando.Parameters.AddWithValue("@nombreyapellido", nombreyapellido);
             comando.Parameters.AddWithValue("@correo", correo);
             comando.Parameters.AddWithValue("@numerodetelefono", numerodetelefono);
             comando.Parameters.AddWithValue("@password", password);
@@ -80,7 +80,7 @@ namespace Gestor_de_contactos
 
             // Actualiza el DataTable
             DataRow nuevaFila = miTabla.NewRow();
-            nuevaFila["nombre"] = nombreyapellido;
+            nuevaFila["nombreyapellido"] = nombreyapellido;
             nuevaFila["correo"] = correo;
             nuevaFila["numerodetelefono"] = numerodetelefono;
             nuevaFila["password"] = password;

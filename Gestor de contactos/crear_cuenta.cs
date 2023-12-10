@@ -10,25 +10,27 @@ namespace Gestor_de_contactos
 {
     class crear_cuenta
     {
-        SqlConnection miConexion = new SqlConnection();
-        SqlCommand miComando = new SqlCommand();
-        SqlDataAdapter miAdaptador = new SqlDataAdapter();
-        DataSet miDs = new DataSet();
-
-        public crear_cuenta()
+        public static string ObtenerCadenaConexion()
         {
-            String cadenaConexio = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Usuarios.mdf;Integrated Security=True";
-            miConexion.ConnectionString = cadenaConexio;
-            miConexion.Open();
+            return @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Usuarios.mdf;Integrated Security=True";
         }
-            public DataSet obtenerDatos()
-        { 
-            miDs.Clear();
-            miComando.Connection = miConexion;
 
-            miComando.CommandText = "select * from Usuario";
-            miAdaptador.SelectCommand = miComando;
-            miAdaptador.Fill(miDs, "Usuario");
+        public DataSet ObtenerDatos()
+        {
+            DataSet miDs = new DataSet();
+
+            using (SqlConnection conexion = new SqlConnection(ObtenerCadenaConexion()))
+            {
+                conexion.Open();
+
+                SqlCommand miComando = new SqlCommand();
+                miComando.Connection = conexion;
+                miComando.CommandText = "select * from Usuario";
+
+                SqlDataAdapter miAdaptador = new SqlDataAdapter();
+                miAdaptador.SelectCommand = miComando;
+                miAdaptador.Fill(miDs, "Usuario");
+            }
 
             return miDs;
         }

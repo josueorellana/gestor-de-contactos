@@ -13,57 +13,22 @@ namespace Gestor_de_contactos
 {
     public partial class frmInicioDeSesion : Form
     {
-        string correo = "Correo";
-        string Password = "Password";
-
         public frmInicioDeSesion()
         {
             InitializeComponent();
         }
 
-        private void btnLong_in_Click(object sender, EventArgs e)
-        {
-            if (txtUsuario.Text != correo || txtContraseña.Text != Password)
-            {
-                if (txtUsuario.Text != correo)
-                {
-                    MessageBox.Show("Usuario incorrecto", "Datos equivocados", MessageBoxButtons.RetryCancel,
-                        MessageBoxIcon.Error);
-                    txtUsuario.Clear();
-
-                }
-                if (txtContraseña.Text != Password)
-                {
-                    MessageBox.Show("Contraseña incorrecta", "Datos equivocados", MessageBoxButtons.RetryCancel,
-                             MessageBoxIcon.Error);
-                    txtContraseña.Clear();
-                }
-            }
-
-            else
-            {
-                txtUsuario.Clear();
-                txtContraseña.Clear();
-                MenuPrincipal principal = new MenuPrincipal();
-                principal.ShowDialog();
-            }
-
-
-        }
-
-
-
         private void pbMostrar_Click(object sender, EventArgs e)
         {
             pbOcultar.BringToFront();
-            txtContraseña.PasswordChar = '*';
+            txtContrasena.PasswordChar = '*';
 
         }
 
         private void pbOcultar_Click(object sender, EventArgs e)
         {
             pbMostrar.BringToFront();
-            txtContraseña.PasswordChar = '\0';
+            txtContrasena.PasswordChar = '\0';
 
         }
 
@@ -94,6 +59,38 @@ namespace Gestor_de_contactos
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIniciarsesion_Click_1(object sender, EventArgs e)
+        {
+            {
+                using (SqlConnection conexion = new SqlConnection(crear_cuenta.ObtenerCadenaConexion()))
+                {
+                    conexion.Open();
+
+                    string query = "SELECT COUNT(*) FROM Usuario WHERE correo = @correo AND password = @contrasena";
+                    SqlCommand cmd = new SqlCommand(query, conexion);
+
+                    // Configurar parámetros
+                    cmd.Parameters.AddWithValue("@correo", txtCorreo.Text);
+                    cmd.Parameters.AddWithValue("@contrasena", txtContrasena.Text);
+
+                    // Ejecutar la consulta
+                    int count = (int)cmd.ExecuteScalar();
+
+                    if (count > 0)
+                    {
+                        // Iniciar sesión exitosa, abrir el formulario MenuPrincipal
+                        MenuPrincipal menup = new MenuPrincipal();
+                        menup.Show();
+                        this.Hide(); // Ocultar el formulario de inicio de sesión
+                    }
+                    else
+                    {
+                        MessageBox.Show("Credenciales incorrectas. Por favor, inténtelo de nuevo.");
+                    }
+                }
+            }
         }
     }
 }

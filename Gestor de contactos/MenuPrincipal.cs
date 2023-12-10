@@ -26,7 +26,7 @@ namespace Gestor_de_contactos
 
         // Con esto ajustamos el tamaño de los formularios para que se ajusten a un tamaña especifico o deseado como ventana o tamaño completo
 
-        private Form ActiveForm = null;
+        private new Form ActiveForm = null;
         private void openMenuPrincipalForm(Form MenuPrincipal)
         {
             if (ActiveForm != null)
