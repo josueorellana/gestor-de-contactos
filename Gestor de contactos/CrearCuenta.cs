@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Gestor_de_contactos
 {
@@ -38,6 +39,7 @@ namespace Gestor_de_contactos
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+        
             string nombreyapellido = txtNombre.Text;
             string correo = txtCorreoElectronico.Text;
             string numerodetelefono = txtNumeroDeTelefono.Text;
@@ -67,7 +69,7 @@ namespace Gestor_de_contactos
                 return;
             }
 
-            // Crea la cuenta de usuario y
+            // Crea la cuenta de usuario
             SqlConnection conexion = new SqlConnection (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Usuarios.mdf;Integrated Security=True");
             conexion.Open();
             SqlCommand comando = new SqlCommand("INSERT INTO Usuario (nombreyapellido, correo, numerodetelefono, password) VALUES (@nombreyapellido, @correo, @numerodetelefono, @password)", conexion);
