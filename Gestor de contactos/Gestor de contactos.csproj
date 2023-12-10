@@ -177,6 +177,9 @@
     <Compile Include="CrearCuenta.Designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsuariosDataSet.cs">
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UsuariosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

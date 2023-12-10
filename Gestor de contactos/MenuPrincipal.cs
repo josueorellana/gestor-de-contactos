@@ -77,12 +77,37 @@ namespace Gestor_de_contactos
 
         private void ptbcerrar_Click(object sender, EventArgs e)
         {
+            // Crear una lista para almacenar los formularios a cerrar
 
+            var formulariosACerrar = new List<Form>();
+
+            // Iterar sobre todos los formularios abiertos y agregarlos a la lista
+            foreach (Form form in Application.OpenForms)
+            {
+                // Excluir el formulario principal (si es necesario)
+                if (form != this)
+                {
+                    formulariosACerrar.Add(form);
+                }
+            }
+
+            // Cerrar los formularios almacenados en la lista
+            foreach (var formularioACerrar in formulariosACerrar)
+            {
+                formularioACerrar.Close();
+            }
         }
 
         private void ptbcerrarsesion_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult resultado = MessageBox.Show("¿Salir de tu cuenta?", "Salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.OK)
+            {
+                // Si el usuario hace clic en "Salir", cerrar el formulario principal
+                this.Close();
+            }
         }
 
         private void panelSideMenuLateral_Paint(object sender, PaintEventArgs e)

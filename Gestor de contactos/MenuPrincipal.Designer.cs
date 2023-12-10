@@ -32,7 +32,6 @@ namespace Gestor_de_contactos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panelSideMenuLateral = new System.Windows.Forms.Panel();
             this.ptbcerrarsesion = new System.Windows.Forms.PictureBox();
-            this.ptbcerrar = new System.Windows.Forms.PictureBox();
             this.pibhome = new System.Windows.Forms.PictureBox();
             this.btnmenuprincipal = new System.Windows.Forms.Button();
             this.ptbayuda = new System.Windows.Forms.PictureBox();
@@ -52,7 +51,6 @@ namespace Gestor_de_contactos
             this.btnbuscarayuda = new System.Windows.Forms.Button();
             this.panelSideMenuLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbcerrarsesion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibhome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbayuda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbpapelera)).BeginInit();
@@ -70,7 +68,6 @@ namespace Gestor_de_contactos
             this.panelSideMenuLateral.AutoScroll = true;
             this.panelSideMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.panelSideMenuLateral.Controls.Add(this.ptbcerrarsesion);
-            this.panelSideMenuLateral.Controls.Add(this.ptbcerrar);
             this.panelSideMenuLateral.Controls.Add(this.pibhome);
             this.panelSideMenuLateral.Controls.Add(this.btnmenuprincipal);
             this.panelSideMenuLateral.Controls.Add(this.ptbayuda);
@@ -92,24 +89,13 @@ namespace Gestor_de_contactos
             // ptbcerrarsesion
             // 
             this.ptbcerrarsesion.Image = ((System.Drawing.Image)(resources.GetObject("ptbcerrarsesion.Image")));
-            this.ptbcerrarsesion.Location = new System.Drawing.Point(161, 631);
+            this.ptbcerrarsesion.Location = new System.Drawing.Point(66, 631);
             this.ptbcerrarsesion.Name = "ptbcerrarsesion";
             this.ptbcerrarsesion.Size = new System.Drawing.Size(41, 38);
             this.ptbcerrarsesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbcerrarsesion.TabIndex = 15;
             this.ptbcerrarsesion.TabStop = false;
             this.ptbcerrarsesion.Click += new System.EventHandler(this.ptbcerrarsesion_Click);
-            // 
-            // ptbcerrar
-            // 
-            this.ptbcerrar.Image = ((System.Drawing.Image)(resources.GetObject("ptbcerrar.Image")));
-            this.ptbcerrar.Location = new System.Drawing.Point(12, 631);
-            this.ptbcerrar.Name = "ptbcerrar";
-            this.ptbcerrar.Size = new System.Drawing.Size(41, 38);
-            this.ptbcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbcerrar.TabIndex = 14;
-            this.ptbcerrar.TabStop = false;
-            this.ptbcerrar.Click += new System.EventHandler(this.ptbcerrar_Click);
             // 
             // pibhome
             // 
@@ -274,7 +260,7 @@ namespace Gestor_de_contactos
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(50, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(107, 101);
+            this.pictureBox2.Size = new System.Drawing.Size(106, 94);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -348,7 +334,6 @@ namespace Gestor_de_contactos
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelSideMenuLateral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbcerrarsesion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibhome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbayuda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbpapelera)).EndInit();
@@ -378,7 +363,6 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Button btnmenuprincipal;
         private System.Windows.Forms.PictureBox ptbcerrarsesion;
-        private System.Windows.Forms.PictureBox ptbcerrar;
         private System.Windows.Forms.PictureBox pibhome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
