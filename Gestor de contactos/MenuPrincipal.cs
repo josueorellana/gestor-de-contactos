@@ -74,7 +74,7 @@ namespace Gestor_de_contactos
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            openMenuPrincipalForm(new ListaDeContactos());
         }
 
         private void ptbcerrar_Click(object sender, EventArgs e)
