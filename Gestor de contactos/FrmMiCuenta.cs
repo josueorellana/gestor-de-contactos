@@ -16,5 +16,10 @@ namespace Gestor_de_contactos
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

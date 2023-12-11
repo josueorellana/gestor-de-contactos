@@ -74,7 +74,14 @@ namespace Gestor_de_contactos
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            // Oculta todos los formularios secundarios en el panel
+            foreach (Control control in panelContenedor.Controls)
+            {
+                if (control is Form formulario)
+                {
+                    formulario.Hide();
+                }
+            }
         }
 
         private void ptbcerrar_Click(object sender, EventArgs e)

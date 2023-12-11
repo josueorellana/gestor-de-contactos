@@ -212,6 +212,9 @@
     <EmbeddedResource Include="CrearContacto.resx">
       <DependentUpon>CrearContacto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMiCuenta.resx">
+      <DependentUpon>FrmMiCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
