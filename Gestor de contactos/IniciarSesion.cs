@@ -61,10 +61,6 @@ namespace Gestor_de_contactos
 
 
         }
-        public static class UsuarioActual
-        {
-            public static int Id { get; set; }
-        }
 
         private void btnIniciarsesion_Click_1(object sender, EventArgs e)
         {
@@ -84,8 +80,6 @@ namespace Gestor_de_contactos
 
                 if (result != null)
                 {
-                    // Almacenar el ID del usuario actual
-                    UsuarioActual.Id = (int)result;
 
                     // Iniciar sesión exitosa, abrir el formulario MenuPrincipal
                     MenuPrincipal menup = new MenuPrincipal();
