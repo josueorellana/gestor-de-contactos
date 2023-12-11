@@ -93,11 +93,20 @@ namespace Gestor_de_contactos
 
             // Muestra un mensaje de éxito
             MessageBox.Show("La cuenta de usuario se creó correctamente.");
+            Limpiar();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Limpiar()
+        {
+            txtNombre.Text = "";
+            txtCorreoElectronico.Text = "";
+            txtNumeroDeTelefono.Text = "";
+            txtPassword.Text = "";
         }
     }
 

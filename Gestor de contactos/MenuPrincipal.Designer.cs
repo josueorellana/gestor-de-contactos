@@ -284,7 +284,7 @@ namespace Gestor_de_contactos
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(210, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(910, 33);
+            this.panel2.Size = new System.Drawing.Size(910, 72);
             this.panel2.TabIndex = 0;
             // 
             // pictureBox3
@@ -311,7 +311,7 @@ namespace Gestor_de_contactos
             // 
             // btnbuscarayuda
             // 
-            this.btnbuscarayuda.Location = new System.Drawing.Point(7, 4);
+            this.btnbuscarayuda.Location = new System.Drawing.Point(76, 27);
             this.btnbuscarayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscarayuda.Name = "btnbuscarayuda";
             this.btnbuscarayuda.Size = new System.Drawing.Size(625, 24);
