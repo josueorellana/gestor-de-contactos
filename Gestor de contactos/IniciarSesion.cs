@@ -89,6 +89,8 @@ namespace Gestor_de_contactos
                 else
                 {
                     MessageBox.Show("Credenciales incorrectas. Por favor, inténtelo de nuevo.");
+                    txtCorreo.Clear();
+                    txtContrasena.Clear();
                 }
             }
         }
