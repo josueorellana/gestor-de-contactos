@@ -49,6 +49,7 @@ namespace Gestor_de_contactos
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnbuscarayuda = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelSideMenuLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbcerrarsesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibhome)).BeginInit();
@@ -58,9 +59,11 @@ namespace Gestor_de_contactos
             ((System.ComponentModel.ISupportInitialize)(this.ptbnewcontacto)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelContenedor.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenuLateral
@@ -100,7 +103,7 @@ namespace Gestor_de_contactos
             // pibhome
             // 
             this.pibhome.Image = ((System.Drawing.Image)(resources.GetObject("pibhome.Image")));
-            this.pibhome.Location = new System.Drawing.Point(3, 287);
+            this.pibhome.Location = new System.Drawing.Point(0, 287);
             this.pibhome.Name = "pibhome";
             this.pibhome.Size = new System.Drawing.Size(41, 38);
             this.pibhome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -268,6 +271,7 @@ namespace Gestor_de_contactos
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.panelContenedor.Controls.Add(this.dataGridView1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(210, 0);
             this.panelContenedor.Name = "panelContenedor";
@@ -286,6 +290,7 @@ namespace Gestor_de_contactos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(910, 72);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox3
             // 
@@ -311,13 +316,21 @@ namespace Gestor_de_contactos
             // 
             // btnbuscarayuda
             // 
-            this.btnbuscarayuda.Location = new System.Drawing.Point(76, 27);
+            this.btnbuscarayuda.Location = new System.Drawing.Point(95, 13);
             this.btnbuscarayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscarayuda.Name = "btnbuscarayuda";
-            this.btnbuscarayuda.Size = new System.Drawing.Size(625, 24);
+            this.btnbuscarayuda.Size = new System.Drawing.Size(625, 41);
             this.btnbuscarayuda.TabIndex = 4;
             this.btnbuscarayuda.Text = "buscar";
             this.btnbuscarayuda.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(28, -54);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(870, 535);
+            this.dataGridView1.TabIndex = 0;
             // 
             // MenuPrincipal
             // 
@@ -341,9 +354,11 @@ namespace Gestor_de_contactos
             ((System.ComponentModel.ISupportInitialize)(this.ptbnewcontacto)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelContenedor.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,5 +383,6 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnbuscarayuda;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

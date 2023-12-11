@@ -157,12 +157,6 @@
       <DependentUpon>IniciarSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio_de_sesion.cs" />
-    <Compile Include="ListaDeContactos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListaDeContactos.Designer.cs">
-      <DependentUpon>ListaDeContactos.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,9 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListaDeContactos.resx">
-      <DependentUpon>ListaDeContactos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

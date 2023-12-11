@@ -74,7 +74,7 @@ namespace Gestor_de_contactos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openMenuPrincipalForm(new ListaDeContactos());
+           
         }
 
         private void ptbcerrar_Click(object sender, EventArgs e)
@@ -113,6 +113,11 @@ namespace Gestor_de_contactos
         }
 
         private void panelSideMenuLateral_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
