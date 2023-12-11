@@ -150,6 +150,18 @@
     </Compile>
     <Compile Include="crear_contacto.cs" />
     <Compile Include="crear_cuenta.cs" />
+    <Compile Include="FrmAjustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjustes.Designer.cs">
+      <DependentUpon>FrmAjustes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMiCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMiCuenta.Designer.cs">
+      <DependentUpon>FrmMiCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -121,5 +121,10 @@ namespace Gestor_de_contactos
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
