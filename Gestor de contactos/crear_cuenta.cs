@@ -30,7 +30,12 @@ namespace Gestor_de_contactos
                 SqlDataAdapter miAdaptador = new SqlDataAdapter();
                 miAdaptador.SelectCommand = miComando;
                 miAdaptador.Fill(miDs, "Usuario");
+
+                miComando.CommandText = "select * from Contactos";
+                miAdaptador.SelectCommand = miComando;
+                miAdaptador.Fill(miDs, "Contactos");
             }
+
 
             return miDs;
         }

@@ -49,7 +49,7 @@ namespace Gestor_de_contactos
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.btnCargarImagen = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -76,7 +76,6 @@ namespace Gestor_de_contactos
             this.txtnombres.Name = "txtnombres";
             this.txtnombres.Size = new System.Drawing.Size(273, 22);
             this.txtnombres.TabIndex = 1;
-            this.txtnombres.TextChanged += new System.EventHandler(this.txtnombres_TextChanged);
             // 
             // lblApellidos
             // 
@@ -253,13 +252,13 @@ namespace Gestor_de_contactos
             this.lblCargo.TabIndex = 20;
             this.lblCargo.Text = "Cargo";
             // 
-            // textBox2
+            // txtCargo
             // 
-            this.textBox2.Location = new System.Drawing.Point(393, 514);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(284, 22);
-            this.textBox2.TabIndex = 21;
+            this.txtCargo.Location = new System.Drawing.Point(393, 514);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(284, 22);
+            this.txtCargo.TabIndex = 21;
             // 
             // btnCargarImagen
             // 
@@ -309,7 +308,6 @@ namespace Gestor_de_contactos
             this.pbCargarImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCargarImagen.TabIndex = 26;
             this.pbCargarImagen.TabStop = false;
-            this.pbCargarImagen.Click += new System.EventHandler(this.pbCargarImagen_Click);
             // 
             // cboPais
             // 
@@ -339,7 +337,7 @@ namespace Gestor_de_contactos
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.btnCargarImagen);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.lblCargo);
             this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.lblEmpresa);
@@ -394,7 +392,7 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.Label lblEmpresa;
         private System.Windows.Forms.TextBox txtEmpresa;
         private System.Windows.Forms.Label lblCargo;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Button btnCargarImagen;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnCancelar;

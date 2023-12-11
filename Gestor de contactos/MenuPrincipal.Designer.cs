@@ -97,7 +97,7 @@ namespace Gestor_de_contactos
             this.panelSideMenuLateral.Name = "panelSideMenuLateral";
             this.panelSideMenuLateral.Size = new System.Drawing.Size(210, 681);
             this.panelSideMenuLateral.TabIndex = 3;
-            this.panelSideMenuLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenuLateral_Paint);
+     
             // 
             // ptbcerrarsesion
             // 
@@ -288,7 +288,7 @@ namespace Gestor_de_contactos
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(910, 681);
             this.panelContenedor.TabIndex = 4;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+      
             // 
             // dataGridContactos
             // 
@@ -310,7 +310,7 @@ namespace Gestor_de_contactos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(910, 72);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+       
             // 
             // pictureBox3
             // 
@@ -322,7 +322,7 @@ namespace Gestor_de_contactos
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+         
             // 
             // pictureBox1
             // 

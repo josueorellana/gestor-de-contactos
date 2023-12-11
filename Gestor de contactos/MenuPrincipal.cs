@@ -13,11 +13,21 @@ namespace Gestor_de_contactos
 {
     public partial class MenuPrincipal : Form
     {
+
+        crear_cuenta objConexion = new crear_cuenta();
+        DataSet miDs = new DataSet();
+        DataTable miTabla = new DataTable();
+
         public MenuPrincipal()
         {
             InitializeComponent();
         }
 
+
+        private void mostrarDatosdeContactos()
+        {
+            dataGridContactos.DataSource = miTabla.DefaultView;
+        }
 
         private void btnAgregarContactos_Click(object sender, EventArgs e)
         {
@@ -58,15 +68,18 @@ namespace Gestor_de_contactos
         private void btnAyuda_Click(object sender, EventArgs e)
         {
             openMenuPrincipalForm(new Ayuda());
+            
         }
-
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
+        
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
+            miDs.Clear();
+            miDs = objConexion.ObtenerDatos();
+            miTabla = miDs.Tables["Contactos"];
+            miTabla.PrimaryKey = new DataColumn[] { miTabla.Columns["IdContactos"] };
+            mostrarDatosdeContactos();
+
             this.FormBorderStyle = FormBorderStyle.None;
 
             this.WindowState = FormWindowState.Maximized;
@@ -119,19 +132,6 @@ namespace Gestor_de_contactos
             }
         }
 
-        private void panelSideMenuLateral_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
     }
 }
