@@ -45,20 +45,20 @@ namespace Gestor_de_contactos
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.dataGridContactos = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnFinalD = new System.Windows.Forms.Button();
+            this.btnInicioD = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnatras = new System.Windows.Forms.Button();
+            this.btnEliminarC = new System.Windows.Forms.Button();
+            this.btnCamcelarCCS = new System.Windows.Forms.Button();
+            this.btnGuardarCC = new System.Windows.Forms.Button();
+            this.btnEditarC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnbuscarayuda = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnEditarC = new System.Windows.Forms.Button();
-            this.btnGuardarCC = new System.Windows.Forms.Button();
-            this.btnCamcelarCCS = new System.Windows.Forms.Button();
-            this.btnEliminarC = new System.Windows.Forms.Button();
-            this.btnatras = new System.Windows.Forms.Button();
-            this.btnSiguiente = new System.Windows.Forms.Button();
-            this.btnInicioD = new System.Windows.Forms.Button();
-            this.btnFinalD = new System.Windows.Forms.Button();
+            this.dataGridContactos = new System.Windows.Forms.DataGridView();
             this.panelSideMenuLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbcerrarsesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibhome)).BeginInit();
@@ -69,11 +69,11 @@ namespace Gestor_de_contactos
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).BeginInit();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenuLateral
@@ -97,7 +97,6 @@ namespace Gestor_de_contactos
             this.panelSideMenuLateral.Name = "panelSideMenuLateral";
             this.panelSideMenuLateral.Size = new System.Drawing.Size(210, 681);
             this.panelSideMenuLateral.TabIndex = 3;
-     
             // 
             // ptbcerrarsesion
             // 
@@ -271,9 +270,9 @@ namespace Gestor_de_contactos
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(210, 98);
+            this.pictureBox2.Size = new System.Drawing.Size(207, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -281,23 +280,101 @@ namespace Gestor_de_contactos
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panelContenedor.Controls.Add(this.panel3);
             this.panelContenedor.Controls.Add(this.dataGridContactos);
+            this.panelContenedor.Controls.Add(this.panel3);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(210, 0);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(910, 681);
             this.panelContenedor.TabIndex = 4;
-      
             // 
-            // dataGridContactos
+            // panel3
             // 
-            this.dataGridContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridContactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridContactos.Location = new System.Drawing.Point(0, 0);
-            this.dataGridContactos.Name = "dataGridContactos";
-            this.dataGridContactos.Size = new System.Drawing.Size(910, 681);
-            this.dataGridContactos.TabIndex = 0;
+            this.panel3.Controls.Add(this.btnFinalD);
+            this.panel3.Controls.Add(this.btnInicioD);
+            this.panel3.Controls.Add(this.btnSiguiente);
+            this.panel3.Controls.Add(this.btnatras);
+            this.panel3.Controls.Add(this.btnEliminarC);
+            this.panel3.Controls.Add(this.btnCamcelarCCS);
+            this.panel3.Controls.Add(this.btnGuardarCC);
+            this.panel3.Controls.Add(this.btnEditarC);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 631);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(910, 50);
+            this.panel3.TabIndex = 1;
+            // 
+            // btnFinalD
+            // 
+            this.btnFinalD.Location = new System.Drawing.Point(843, 6);
+            this.btnFinalD.Name = "btnFinalD";
+            this.btnFinalD.Size = new System.Drawing.Size(44, 32);
+            this.btnFinalD.TabIndex = 7;
+            this.btnFinalD.Text = ">>>";
+            this.btnFinalD.UseVisualStyleBackColor = true;
+            // 
+            // btnInicioD
+            // 
+            this.btnInicioD.Location = new System.Drawing.Point(743, 6);
+            this.btnInicioD.Name = "btnInicioD";
+            this.btnInicioD.Size = new System.Drawing.Size(44, 32);
+            this.btnInicioD.TabIndex = 6;
+            this.btnInicioD.Text = "<<<";
+            this.btnInicioD.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Location = new System.Drawing.Point(817, 6);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(20, 32);
+            this.btnSiguiente.TabIndex = 5;
+            this.btnSiguiente.Text = ">";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // btnatras
+            // 
+            this.btnatras.Location = new System.Drawing.Point(793, 6);
+            this.btnatras.Name = "btnatras";
+            this.btnatras.Size = new System.Drawing.Size(22, 32);
+            this.btnatras.TabIndex = 4;
+            this.btnatras.Text = "<";
+            this.btnatras.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminarC
+            // 
+            this.btnEliminarC.Location = new System.Drawing.Point(322, 6);
+            this.btnEliminarC.Name = "btnEliminarC";
+            this.btnEliminarC.Size = new System.Drawing.Size(97, 32);
+            this.btnEliminarC.TabIndex = 3;
+            this.btnEliminarC.Text = "Editar";
+            this.btnEliminarC.UseVisualStyleBackColor = true;
+            // 
+            // btnCamcelarCCS
+            // 
+            this.btnCamcelarCCS.Location = new System.Drawing.Point(219, 6);
+            this.btnCamcelarCCS.Name = "btnCamcelarCCS";
+            this.btnCamcelarCCS.Size = new System.Drawing.Size(97, 32);
+            this.btnCamcelarCCS.TabIndex = 2;
+            this.btnCamcelarCCS.Text = "Editar";
+            this.btnCamcelarCCS.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardarCC
+            // 
+            this.btnGuardarCC.Location = new System.Drawing.Point(116, 6);
+            this.btnGuardarCC.Name = "btnGuardarCC";
+            this.btnGuardarCC.Size = new System.Drawing.Size(97, 32);
+            this.btnGuardarCC.TabIndex = 1;
+            this.btnGuardarCC.Text = "Editar";
+            this.btnGuardarCC.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarC
+            // 
+            this.btnEditarC.Location = new System.Drawing.Point(13, 6);
+            this.btnEditarC.Name = "btnEditarC";
+            this.btnEditarC.Size = new System.Drawing.Size(97, 32);
+            this.btnEditarC.TabIndex = 0;
+            this.btnEditarC.Text = "Editar";
+            this.btnEditarC.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -308,9 +385,8 @@ namespace Gestor_de_contactos
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(210, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(910, 72);
+            this.panel2.Size = new System.Drawing.Size(910, 100);
             this.panel2.TabIndex = 0;
-       
             // 
             // pictureBox3
             // 
@@ -322,7 +398,6 @@ namespace Gestor_de_contactos
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
-         
             // 
             // pictureBox1
             // 
@@ -345,93 +420,13 @@ namespace Gestor_de_contactos
             this.btnbuscarayuda.Text = "buscar";
             this.btnbuscarayuda.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // dataGridContactos
             // 
-            this.panel3.Controls.Add(this.btnFinalD);
-            this.panel3.Controls.Add(this.btnInicioD);
-            this.panel3.Controls.Add(this.btnSiguiente);
-            this.panel3.Controls.Add(this.btnatras);
-            this.panel3.Controls.Add(this.btnEliminarC);
-            this.panel3.Controls.Add(this.btnCamcelarCCS);
-            this.panel3.Controls.Add(this.btnGuardarCC);
-            this.panel3.Controls.Add(this.btnEditarC);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 631);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(910, 50);
-            this.panel3.TabIndex = 1;
-            // 
-            // btnEditarC
-            // 
-            this.btnEditarC.Location = new System.Drawing.Point(13, 6);
-            this.btnEditarC.Name = "btnEditarC";
-            this.btnEditarC.Size = new System.Drawing.Size(97, 32);
-            this.btnEditarC.TabIndex = 0;
-            this.btnEditarC.Text = "Editar";
-            this.btnEditarC.UseVisualStyleBackColor = true;
-            // 
-            // btnGuardarCC
-            // 
-            this.btnGuardarCC.Location = new System.Drawing.Point(116, 6);
-            this.btnGuardarCC.Name = "btnGuardarCC";
-            this.btnGuardarCC.Size = new System.Drawing.Size(97, 32);
-            this.btnGuardarCC.TabIndex = 1;
-            this.btnGuardarCC.Text = "Editar";
-            this.btnGuardarCC.UseVisualStyleBackColor = true;
-            // 
-            // btnCamcelarCCS
-            // 
-            this.btnCamcelarCCS.Location = new System.Drawing.Point(219, 6);
-            this.btnCamcelarCCS.Name = "btnCamcelarCCS";
-            this.btnCamcelarCCS.Size = new System.Drawing.Size(97, 32);
-            this.btnCamcelarCCS.TabIndex = 2;
-            this.btnCamcelarCCS.Text = "Editar";
-            this.btnCamcelarCCS.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminarC
-            // 
-            this.btnEliminarC.Location = new System.Drawing.Point(322, 6);
-            this.btnEliminarC.Name = "btnEliminarC";
-            this.btnEliminarC.Size = new System.Drawing.Size(97, 32);
-            this.btnEliminarC.TabIndex = 3;
-            this.btnEliminarC.Text = "Editar";
-            this.btnEliminarC.UseVisualStyleBackColor = true;
-            // 
-            // btnatras
-            // 
-            this.btnatras.Location = new System.Drawing.Point(793, 6);
-            this.btnatras.Name = "btnatras";
-            this.btnatras.Size = new System.Drawing.Size(22, 32);
-            this.btnatras.TabIndex = 4;
-            this.btnatras.Text = "<";
-            this.btnatras.UseVisualStyleBackColor = true;
-            // 
-            // btnSiguiente
-            // 
-            this.btnSiguiente.Location = new System.Drawing.Point(817, 6);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(20, 32);
-            this.btnSiguiente.TabIndex = 5;
-            this.btnSiguiente.Text = ">";
-            this.btnSiguiente.UseVisualStyleBackColor = true;
-            // 
-            // btnInicioD
-            // 
-            this.btnInicioD.Location = new System.Drawing.Point(743, 6);
-            this.btnInicioD.Name = "btnInicioD";
-            this.btnInicioD.Size = new System.Drawing.Size(44, 32);
-            this.btnInicioD.TabIndex = 6;
-            this.btnInicioD.Text = "<<<";
-            this.btnInicioD.UseVisualStyleBackColor = true;
-            // 
-            // btnFinalD
-            // 
-            this.btnFinalD.Location = new System.Drawing.Point(843, 6);
-            this.btnFinalD.Name = "btnFinalD";
-            this.btnFinalD.Size = new System.Drawing.Size(44, 32);
-            this.btnFinalD.TabIndex = 7;
-            this.btnFinalD.Text = ">>>";
-            this.btnFinalD.UseVisualStyleBackColor = true;
+            this.dataGridContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridContactos.Location = new System.Drawing.Point(5, 102);
+            this.dataGridContactos.Name = "dataGridContactos";
+            this.dataGridContactos.Size = new System.Drawing.Size(902, 529);
+            this.dataGridContactos.TabIndex = 2;
             // 
             // MenuPrincipal
             // 
@@ -456,11 +451,11 @@ namespace Gestor_de_contactos
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -485,7 +480,6 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnbuscarayuda;
-        private System.Windows.Forms.DataGridView dataGridContactos;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnEditarC;
         private System.Windows.Forms.Button btnFinalD;
@@ -495,5 +489,6 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.Button btnEliminarC;
         private System.Windows.Forms.Button btnCamcelarCCS;
         private System.Windows.Forms.Button btnGuardarCC;
+        private System.Windows.Forms.DataGridView dataGridContactos;
     }
 }

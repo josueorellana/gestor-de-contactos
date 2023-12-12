@@ -363,7 +363,7 @@ namespace Gestor_de_contactos
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCrearContacto";
             this.Text = "Crear Contacto";
-            this.Load += new System.EventHandler(this.frmCrearContacto_Load);
+        
             ((System.ComponentModel.ISupportInitialize)(this.pbCargarImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

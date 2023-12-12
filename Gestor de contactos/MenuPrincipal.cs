@@ -132,6 +132,9 @@ namespace Gestor_de_contactos
             }
         }
 
-        
+        private void dataGridContactos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

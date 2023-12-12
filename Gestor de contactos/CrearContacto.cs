@@ -105,11 +105,22 @@ namespace Gestor_de_contactos
             comando.ExecuteNonQuery();
             conexion.Close();
             MessageBox.Show("Los datos se ingresaron correctamente");
+            limpiarDatos();
         }
 
-        private void frmCrearContacto_Load(object sender, EventArgs e)
+        
+        private void limpiarDatos()
         {
-
+            txtnombres.Text = "";
+            txtApellidos.Text = "";
+            txtCorreo.Text = "";
+            txtCorreo2.Text = "";
+            txtTelefono.Text = "";
+            txtTelefono2.Text = "";
+            cboPais.Text = "";
+            txtDireccion.Text = "";
+            txtEmpresa.Text = "";
+            txtCargo.Text = "";
         }
     }
 }
