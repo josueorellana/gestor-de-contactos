@@ -420,7 +420,7 @@ namespace Gestor_de_contactos
             // 
             // btnbuscarayuda
             // 
-            this.btnbuscarayuda.Location = new System.Drawing.Point(92, 22);
+            this.btnbuscarayuda.Location = new System.Drawing.Point(87, 23);
             this.btnbuscarayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscarayuda.Name = "btnbuscarayuda";
             this.btnbuscarayuda.Size = new System.Drawing.Size(625, 41);
