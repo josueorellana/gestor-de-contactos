@@ -19,6 +19,8 @@ namespace Gestor_de_contactos
             InitializeComponent();
         }
 
+        DataTable miTabla = new DataTable();
+
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog abrirImagen = new OpenFileDialog();
@@ -106,8 +108,20 @@ namespace Gestor_de_contactos
             conexion.Close();
             MessageBox.Show("Los datos se ingresaron correctamente");
             limpiarDatos();
-        }
 
+            DataRow nuevaFila = miTabla.NewRow();
+            nuevaFila["Nombre"] = nombre;
+            nuevaFila["apellido"] = apellido;
+            nuevaFila["Correouno"] = correouno;
+            nuevaFila["Correodos"] = correodos;
+            nuevaFila["Numerodetelefono"] = numerodetelefono;
+            nuevaFila["Fechadenacimiento"] = fechadenacimiento;
+            nuevaFila["pais"] = pais;
+            nuevaFila["empresa"] = empresa;
+            nuevaFila["cargo"] = cargo;
+            miTabla.Rows.Add(nuevaFila);
+
+        }       
         
         private void limpiarDatos()
         {
@@ -122,5 +136,6 @@ namespace Gestor_de_contactos
             txtEmpresa.Text = "";
             txtCargo.Text = "";
         }
+               
     }
 }

@@ -83,8 +83,9 @@ namespace Gestor_de_contactos
             this.FormBorderStyle = FormBorderStyle.None;
 
             this.WindowState = FormWindowState.Maximized;
+                       
         }
-
+               
         private void button1_Click(object sender, EventArgs e)
         {
             // Oculta todos los formularios secundarios en el panel
@@ -132,9 +133,6 @@ namespace Gestor_de_contactos
             }
         }
 
-        private void dataGridContactos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }
