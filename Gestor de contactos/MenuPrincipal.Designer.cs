@@ -290,9 +290,12 @@ namespace Gestor_de_contactos
             // 
             // dataGridContactos
             // 
+            this.dataGridContactos.AllowUserToAddRows = false;
+            this.dataGridContactos.AllowUserToDeleteRows = false;
             this.dataGridContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridContactos.Location = new System.Drawing.Point(5, 102);
             this.dataGridContactos.Name = "dataGridContactos";
+            this.dataGridContactos.ReadOnly = true;
             this.dataGridContactos.Size = new System.Drawing.Size(902, 529);
             this.dataGridContactos.TabIndex = 2;
             // 
