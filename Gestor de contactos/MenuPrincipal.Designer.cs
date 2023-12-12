@@ -45,6 +45,7 @@ namespace Gestor_de_contactos
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.dataGridContactos = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnFinalD = new System.Windows.Forms.Button();
             this.btnInicioD = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@ namespace Gestor_de_contactos
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnbuscarayuda = new System.Windows.Forms.Button();
-            this.dataGridContactos = new System.Windows.Forms.DataGridView();
             this.panelSideMenuLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbcerrarsesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibhome)).BeginInit();
@@ -69,11 +69,11 @@ namespace Gestor_de_contactos
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenuLateral
@@ -288,6 +288,14 @@ namespace Gestor_de_contactos
             this.panelContenedor.Size = new System.Drawing.Size(910, 681);
             this.panelContenedor.TabIndex = 4;
             // 
+            // dataGridContactos
+            // 
+            this.dataGridContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridContactos.Location = new System.Drawing.Point(5, 102);
+            this.dataGridContactos.Name = "dataGridContactos";
+            this.dataGridContactos.Size = new System.Drawing.Size(902, 529);
+            this.dataGridContactos.TabIndex = 2;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnFinalD);
@@ -412,21 +420,13 @@ namespace Gestor_de_contactos
             // 
             // btnbuscarayuda
             // 
-            this.btnbuscarayuda.Location = new System.Drawing.Point(95, 13);
+            this.btnbuscarayuda.Location = new System.Drawing.Point(92, 22);
             this.btnbuscarayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscarayuda.Name = "btnbuscarayuda";
             this.btnbuscarayuda.Size = new System.Drawing.Size(625, 41);
             this.btnbuscarayuda.TabIndex = 4;
             this.btnbuscarayuda.Text = "buscar";
             this.btnbuscarayuda.UseVisualStyleBackColor = true;
-            // 
-            // dataGridContactos
-            // 
-            this.dataGridContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridContactos.Location = new System.Drawing.Point(5, 102);
-            this.dataGridContactos.Name = "dataGridContactos";
-            this.dataGridContactos.Size = new System.Drawing.Size(902, 529);
-            this.dataGridContactos.TabIndex = 2;
             // 
             // MenuPrincipal
             // 
@@ -451,11 +451,11 @@ namespace Gestor_de_contactos
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).EndInit();
             this.ResumeLayout(false);
 
         }
