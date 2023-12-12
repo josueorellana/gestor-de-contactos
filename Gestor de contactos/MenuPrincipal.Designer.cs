@@ -42,11 +42,12 @@ namespace Gestor_de_contactos
             this.btnPapelera = new System.Windows.Forms.Button();
             this.btnCtsFrecuentes = new System.Windows.Forms.Button();
             this.btnAgregarContactos = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel77 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.dataGridContactos = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.Panel3 = new System.Windows.Forms.Panel();
+            this.btnRestaurarContacto = new System.Windows.Forms.Button();
             this.btnFinalD = new System.Windows.Forms.Button();
             this.btnInicioD = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -55,10 +56,11 @@ namespace Gestor_de_contactos
             this.btnCamcelarCCS = new System.Windows.Forms.Button();
             this.btnGuardarCC = new System.Windows.Forms.Button();
             this.btnEditarC = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.Panel2 = new System.Windows.Forms.Panel();
+            this.lblBuscarContacto = new System.Windows.Forms.Label();
+            this.txtBuscarContacto = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnbuscarayuda = new System.Windows.Forms.Button();
             this.panelSideMenuLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbcerrarsesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibhome)).BeginInit();
@@ -66,12 +68,12 @@ namespace Gestor_de_contactos
             ((System.ComponentModel.ISupportInitialize)(this.ptbpapelera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbfriends)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbnewcontacto)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panel77.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.Panel3.SuspendLayout();
+            this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -91,17 +93,17 @@ namespace Gestor_de_contactos
             this.panelSideMenuLateral.Controls.Add(this.btnPapelera);
             this.panelSideMenuLateral.Controls.Add(this.btnCtsFrecuentes);
             this.panelSideMenuLateral.Controls.Add(this.btnAgregarContactos);
-            this.panelSideMenuLateral.Controls.Add(this.panel1);
+            this.panelSideMenuLateral.Controls.Add(this.panel77);
             this.panelSideMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenuLateral.Name = "panelSideMenuLateral";
-            this.panelSideMenuLateral.Size = new System.Drawing.Size(210, 681);
+            this.panelSideMenuLateral.Size = new System.Drawing.Size(210, 710);
             this.panelSideMenuLateral.TabIndex = 3;
             // 
             // ptbcerrarsesion
             // 
             this.ptbcerrarsesion.Image = ((System.Drawing.Image)(resources.GetObject("ptbcerrarsesion.Image")));
-            this.ptbcerrarsesion.Location = new System.Drawing.Point(71, 631);
+            this.ptbcerrarsesion.Location = new System.Drawing.Point(73, 660);
             this.ptbcerrarsesion.Name = "ptbcerrarsesion";
             this.ptbcerrarsesion.Size = new System.Drawing.Size(41, 38);
             this.ptbcerrarsesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -258,62 +260,78 @@ namespace Gestor_de_contactos
             this.btnAgregarContactos.UseVisualStyleBackColor = true;
             this.btnAgregarContactos.Click += new System.EventHandler(this.btnAgregarContactos_Click);
             // 
-            // panel1
+            // panel77
             // 
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 100);
-            this.panel1.TabIndex = 0;
+            this.panel77.Controls.Add(this.pictureBox2);
+            this.panel77.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel77.Location = new System.Drawing.Point(0, 0);
+            this.panel77.Name = "panel77";
+            this.panel77.Size = new System.Drawing.Size(210, 100);
+            this.panel77.TabIndex = 0;
+            this.panel77.Paint += new System.Windows.Forms.PaintEventHandler(this.panel77_Paint);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(31, 32);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(207, 98);
+            this.pictureBox2.Size = new System.Drawing.Size(179, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.panelContenedor.Controls.Add(this.dataGridContactos);
-            this.panelContenedor.Controls.Add(this.panel3);
+            this.panelContenedor.Controls.Add(this.Panel3);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(210, 0);
+            this.panelContenedor.Location = new System.Drawing.Point(210, 54);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(910, 681);
+            this.panelContenedor.Size = new System.Drawing.Size(967, 656);
             this.panelContenedor.TabIndex = 4;
             // 
             // dataGridContactos
             // 
-            this.dataGridContactos.AllowUserToAddRows = false;
-            this.dataGridContactos.AllowUserToDeleteRows = false;
+            this.dataGridContactos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.dataGridContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridContactos.Location = new System.Drawing.Point(5, 102);
+            this.dataGridContactos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridContactos.GridColor = System.Drawing.Color.DarkSlateGray;
+            this.dataGridContactos.Location = new System.Drawing.Point(0, 0);
             this.dataGridContactos.Name = "dataGridContactos";
             this.dataGridContactos.ReadOnly = true;
-            this.dataGridContactos.Size = new System.Drawing.Size(902, 529);
+            this.dataGridContactos.Size = new System.Drawing.Size(967, 606);
             this.dataGridContactos.TabIndex = 2;
+            this.dataGridContactos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridContactos_CellContentClick);
             // 
-            // panel3
+            // Panel3
             // 
-            this.panel3.Controls.Add(this.btnFinalD);
-            this.panel3.Controls.Add(this.btnInicioD);
-            this.panel3.Controls.Add(this.btnSiguiente);
-            this.panel3.Controls.Add(this.btnatras);
-            this.panel3.Controls.Add(this.btnEliminarC);
-            this.panel3.Controls.Add(this.btnCamcelarCCS);
-            this.panel3.Controls.Add(this.btnGuardarCC);
-            this.panel3.Controls.Add(this.btnEditarC);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 631);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(910, 50);
-            this.panel3.TabIndex = 1;
+            this.Panel3.Controls.Add(this.btnRestaurarContacto);
+            this.Panel3.Controls.Add(this.btnFinalD);
+            this.Panel3.Controls.Add(this.btnInicioD);
+            this.Panel3.Controls.Add(this.btnSiguiente);
+            this.Panel3.Controls.Add(this.btnatras);
+            this.Panel3.Controls.Add(this.btnEliminarC);
+            this.Panel3.Controls.Add(this.btnCamcelarCCS);
+            this.Panel3.Controls.Add(this.btnGuardarCC);
+            this.Panel3.Controls.Add(this.btnEditarC);
+            this.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Panel3.Location = new System.Drawing.Point(0, 606);
+            this.Panel3.Name = "Panel3";
+            this.Panel3.Size = new System.Drawing.Size(967, 50);
+            this.Panel3.TabIndex = 1;
+            this.Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
+            // 
+            // btnRestaurarContacto
+            // 
+            this.btnRestaurarContacto.Location = new System.Drawing.Point(640, 6);
+            this.btnRestaurarContacto.Name = "btnRestaurarContacto";
+            this.btnRestaurarContacto.Size = new System.Drawing.Size(97, 32);
+            this.btnRestaurarContacto.TabIndex = 8;
+            this.btnRestaurarContacto.Text = "Restaurar";
+            this.btnRestaurarContacto.UseVisualStyleBackColor = true;
+            this.btnRestaurarContacto.Click += new System.EventHandler(this.btnRestaurarContacto_Click);
             // 
             // btnFinalD
             // 
@@ -341,6 +359,7 @@ namespace Gestor_de_contactos
             this.btnSiguiente.TabIndex = 5;
             this.btnSiguiente.Text = ">";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnatras
             // 
@@ -350,6 +369,7 @@ namespace Gestor_de_contactos
             this.btnatras.TabIndex = 4;
             this.btnatras.Text = "<";
             this.btnatras.UseVisualStyleBackColor = true;
+            this.btnatras.Click += new System.EventHandler(this.btnatras_Click);
             // 
             // btnEliminarC
             // 
@@ -357,8 +377,9 @@ namespace Gestor_de_contactos
             this.btnEliminarC.Name = "btnEliminarC";
             this.btnEliminarC.Size = new System.Drawing.Size(97, 32);
             this.btnEliminarC.TabIndex = 3;
-            this.btnEliminarC.Text = "Editar";
+            this.btnEliminarC.Text = "Borrar";
             this.btnEliminarC.UseVisualStyleBackColor = true;
+            this.btnEliminarC.Click += new System.EventHandler(this.btnEliminarC_Click);
             // 
             // btnCamcelarCCS
             // 
@@ -366,8 +387,9 @@ namespace Gestor_de_contactos
             this.btnCamcelarCCS.Name = "btnCamcelarCCS";
             this.btnCamcelarCCS.Size = new System.Drawing.Size(97, 32);
             this.btnCamcelarCCS.TabIndex = 2;
-            this.btnCamcelarCCS.Text = "Editar";
+            this.btnCamcelarCCS.Text = "Cancelar";
             this.btnCamcelarCCS.UseVisualStyleBackColor = true;
+            this.btnCamcelarCCS.Click += new System.EventHandler(this.btnCamcelarCCS_Click);
             // 
             // btnGuardarCC
             // 
@@ -375,8 +397,9 @@ namespace Gestor_de_contactos
             this.btnGuardarCC.Name = "btnGuardarCC";
             this.btnGuardarCC.Size = new System.Drawing.Size(97, 32);
             this.btnGuardarCC.TabIndex = 1;
-            this.btnGuardarCC.Text = "Editar";
+            this.btnGuardarCC.Text = "Guardar";
             this.btnGuardarCC.UseVisualStyleBackColor = true;
+            this.btnGuardarCC.Click += new System.EventHandler(this.btnGuardarCC_Click);
             // 
             // btnEditarC
             // 
@@ -386,26 +409,48 @@ namespace Gestor_de_contactos
             this.btnEditarC.TabIndex = 0;
             this.btnEditarC.Text = "Editar";
             this.btnEditarC.UseVisualStyleBackColor = true;
+            this.btnEditarC.Click += new System.EventHandler(this.btnEditarC_Click);
             // 
-            // panel2
+            // Panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btnbuscarayuda);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(210, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(910, 100);
-            this.panel2.TabIndex = 0;
+            this.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.Panel2.Controls.Add(this.lblBuscarContacto);
+            this.Panel2.Controls.Add(this.txtBuscarContacto);
+            this.Panel2.Controls.Add(this.pictureBox3);
+            this.Panel2.Controls.Add(this.pictureBox1);
+            this.Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel2.Location = new System.Drawing.Point(210, 0);
+            this.Panel2.Name = "Panel2";
+            this.Panel2.Size = new System.Drawing.Size(967, 54);
+            this.Panel2.TabIndex = 0;
+            this.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
+            // 
+            // lblBuscarContacto
+            // 
+            this.lblBuscarContacto.AutoSize = true;
+            this.lblBuscarContacto.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBuscarContacto.Location = new System.Drawing.Point(37, 21);
+            this.lblBuscarContacto.Name = "lblBuscarContacto";
+            this.lblBuscarContacto.Size = new System.Drawing.Size(116, 17);
+            this.lblBuscarContacto.TabIndex = 19;
+            this.lblBuscarContacto.Text = "Buscar Contacto:";
+            this.lblBuscarContacto.Click += new System.EventHandler(this.lblBuscarContacto_Click);
+            // 
+            // txtBuscarContacto
+            // 
+            this.txtBuscarContacto.Location = new System.Drawing.Point(159, 15);
+            this.txtBuscarContacto.Name = "txtBuscarContacto";
+            this.txtBuscarContacto.Size = new System.Drawing.Size(673, 23);
+            this.txtBuscarContacto.TabIndex = 18;
+            this.txtBuscarContacto.TextChanged += new System.EventHandler(this.txtBuscarContacto_TextChanged);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(843, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(906, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox3.Size = new System.Drawing.Size(49, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
@@ -414,30 +459,20 @@ namespace Gestor_de_contactos
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(802, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(838, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(62, 55);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnbuscarayuda
-            // 
-            this.btnbuscarayuda.Location = new System.Drawing.Point(93, 27);
-            this.btnbuscarayuda.Margin = new System.Windows.Forms.Padding(4);
-            this.btnbuscarayuda.Name = "btnbuscarayuda";
-            this.btnbuscarayuda.Size = new System.Drawing.Size(625, 41);
-            this.btnbuscarayuda.TabIndex = 4;
-            this.btnbuscarayuda.Text = "buscar";
-            this.btnbuscarayuda.UseVisualStyleBackColor = true;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1120, 681);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1177, 710);
             this.Controls.Add(this.panelContenedor);
+            this.Controls.Add(this.Panel2);
             this.Controls.Add(this.panelSideMenuLateral);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -451,12 +486,13 @@ namespace Gestor_de_contactos
             ((System.ComponentModel.ISupportInitialize)(this.ptbpapelera)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbfriends)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbnewcontacto)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.panel77.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContactos)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.Panel3.ResumeLayout(false);
+            this.Panel2.ResumeLayout(false);
+            this.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -466,7 +502,7 @@ namespace Gestor_de_contactos
         #endregion
         private System.Windows.Forms.Panel panelSideMenuLateral;
         private System.Windows.Forms.Button btnAgregarContactos;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel77;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button btnPapelera;
@@ -479,11 +515,10 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.Button btnmenuprincipal;
         private System.Windows.Forms.PictureBox ptbcerrarsesion;
         private System.Windows.Forms.PictureBox pibhome;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel Panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnbuscarayuda;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel Panel3;
         private System.Windows.Forms.Button btnEditarC;
         private System.Windows.Forms.Button btnFinalD;
         private System.Windows.Forms.Button btnInicioD;
@@ -493,5 +528,8 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.Button btnCamcelarCCS;
         private System.Windows.Forms.Button btnGuardarCC;
         private System.Windows.Forms.DataGridView dataGridContactos;
+        private System.Windows.Forms.Button btnRestaurarContacto;
+        private System.Windows.Forms.TextBox txtBuscarContacto;
+        private System.Windows.Forms.Label lblBuscarContacto;
     }
 }

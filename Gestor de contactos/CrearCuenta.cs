@@ -108,6 +108,11 @@ namespace Gestor_de_contactos
             txtNumeroDeTelefono.Text = "";
             txtPassword.Text = "";
         }
+
+        private void grdDatosUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

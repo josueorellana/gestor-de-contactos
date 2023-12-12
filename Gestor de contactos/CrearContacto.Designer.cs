@@ -30,7 +30,7 @@ namespace Gestor_de_contactos
         private void InitializeComponent()
         {
             this.lblNombres = new System.Windows.Forms.Label();
-            this.txtnombres = new System.Windows.Forms.TextBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.lblCorreo1 = new System.Windows.Forms.Label();
@@ -38,12 +38,10 @@ namespace Gestor_de_contactos
             this.txtCorreo2 = new System.Windows.Forms.TextBox();
             this.lblTelefono1 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtTelefono2 = new System.Windows.Forms.TextBox();
             this.lblFechaDeNacimiento = new System.Windows.Forms.Label();
             this.dtpFechaDeNacimiento = new System.Windows.Forms.DateTimePicker();
             this.lblPais = new System.Windows.Forms.Label();
             this.lblCorreo2 = new System.Windows.Forms.Label();
-            this.lblTelefono2 = new System.Windows.Forms.Label();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblEmpresa = new System.Windows.Forms.Label();
@@ -55,7 +53,9 @@ namespace Gestor_de_contactos
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pbCargarImagen = new System.Windows.Forms.PictureBox();
             this.cboPais = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbCargarImagen)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNombres
@@ -69,13 +69,13 @@ namespace Gestor_de_contactos
             this.lblNombres.TabIndex = 0;
             this.lblNombres.Text = "Nombres";
             // 
-            // txtnombres
+            // txtNombres
             // 
-            this.txtnombres.Location = new System.Drawing.Point(69, 202);
-            this.txtnombres.Margin = new System.Windows.Forms.Padding(4);
-            this.txtnombres.Name = "txtnombres";
-            this.txtnombres.Size = new System.Drawing.Size(273, 22);
-            this.txtnombres.TabIndex = 1;
+            this.txtNombres.Location = new System.Drawing.Point(69, 202);
+            this.txtNombres.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(273, 22);
+            this.txtNombres.TabIndex = 1;
             // 
             // lblApellidos
             // 
@@ -142,14 +142,6 @@ namespace Gestor_de_contactos
             this.txtTelefono.Size = new System.Drawing.Size(273, 22);
             this.txtTelefono.TabIndex = 8;
             // 
-            // txtTelefono2
-            // 
-            this.txtTelefono2.Location = new System.Drawing.Point(393, 327);
-            this.txtTelefono2.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono2.Name = "txtTelefono2";
-            this.txtTelefono2.Size = new System.Drawing.Size(284, 22);
-            this.txtTelefono2.TabIndex = 9;
-            // 
             // lblFechaDeNacimiento
             // 
             this.lblFechaDeNacimiento.AutoSize = true;
@@ -191,17 +183,6 @@ namespace Gestor_de_contactos
             this.lblCorreo2.Size = new System.Drawing.Size(62, 16);
             this.lblCorreo2.TabIndex = 14;
             this.lblCorreo2.Text = "Correo 2";
-            // 
-            // lblTelefono2
-            // 
-            this.lblTelefono2.AutoSize = true;
-            this.lblTelefono2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono2.Location = new System.Drawing.Point(389, 304);
-            this.lblTelefono2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTelefono2.Name = "lblTelefono2";
-            this.lblTelefono2.Size = new System.Drawing.Size(74, 16);
-            this.lblTelefono2.TabIndex = 15;
-            this.lblTelefono2.Text = "Telefono 2";
             // 
             // lblDireccion
             // 
@@ -291,7 +272,7 @@ namespace Gestor_de_contactos
             this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnCancelar.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelar.Location = new System.Drawing.Point(392, 576);
+            this.btnCancelar.Location = new System.Drawing.Point(393, 576);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(107, 43);
@@ -326,6 +307,16 @@ namespace Gestor_de_contactos
             this.cboPais.Size = new System.Drawing.Size(160, 24);
             this.cboPais.TabIndex = 27;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnCancelar);
+            this.panel1.Controls.Add(this.btnCrear);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(796, 632);
+            this.panel1.TabIndex = 28;
+            // 
             // frmCrearContacto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,8 +325,6 @@ namespace Gestor_de_contactos
             this.ClientSize = new System.Drawing.Size(796, 632);
             this.Controls.Add(this.cboPais);
             this.Controls.Add(this.pbCargarImagen);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.btnCargarImagen);
             this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.lblCargo);
@@ -343,12 +332,10 @@ namespace Gestor_de_contactos
             this.Controls.Add(this.lblEmpresa);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.lblDireccion);
-            this.Controls.Add(this.lblTelefono2);
             this.Controls.Add(this.lblCorreo2);
             this.Controls.Add(this.lblPais);
             this.Controls.Add(this.dtpFechaDeNacimiento);
             this.Controls.Add(this.lblFechaDeNacimiento);
-            this.Controls.Add(this.txtTelefono2);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblTelefono1);
             this.Controls.Add(this.txtCorreo2);
@@ -356,15 +343,16 @@ namespace Gestor_de_contactos
             this.Controls.Add(this.lblCorreo1);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.lblApellidos);
-            this.Controls.Add(this.txtnombres);
+            this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.lblNombres);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCrearContacto";
             this.Text = "Crear Contacto";
-        
             ((System.ComponentModel.ISupportInitialize)(this.pbCargarImagen)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,7 +361,7 @@ namespace Gestor_de_contactos
         #endregion
 
         private System.Windows.Forms.Label lblNombres;
-        private System.Windows.Forms.TextBox txtnombres;
+        private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.Label lblCorreo1;
@@ -381,12 +369,10 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.TextBox txtCorreo2;
         private System.Windows.Forms.Label lblTelefono1;
         private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtTelefono2;
         private System.Windows.Forms.Label lblFechaDeNacimiento;
         private System.Windows.Forms.DateTimePicker dtpFechaDeNacimiento;
         private System.Windows.Forms.Label lblPais;
         private System.Windows.Forms.Label lblCorreo2;
-        private System.Windows.Forms.Label lblTelefono2;
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label lblEmpresa;
@@ -398,5 +384,6 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pbCargarImagen;
         private System.Windows.Forms.ComboBox cboPais;
+        private System.Windows.Forms.Panel panel1;
     }
 }

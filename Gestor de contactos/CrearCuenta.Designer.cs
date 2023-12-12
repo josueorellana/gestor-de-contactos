@@ -55,6 +55,7 @@ namespace Gestor_de_contactos
             this.grdDatosUsuarios.ReadOnly = true;
             this.grdDatosUsuarios.Size = new System.Drawing.Size(507, 342);
             this.grdDatosUsuarios.TabIndex = 0;
+            this.grdDatosUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosUsuarios_CellContentClick);
             // 
             // groupBox1
             // 

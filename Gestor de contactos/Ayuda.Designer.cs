@@ -30,55 +30,52 @@ namespace Gestor_de_contactos
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnbuscarayuda = new System.Windows.Forms.Button();
-            this.textBoxprgnta1 = new System.Windows.Forms.TextBox();
-            this.textBoxprgnta2 = new System.Windows.Forms.TextBox();
-            this.textBoxprgnta3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.panel1.Controls.Add(this.btnbuscarayuda);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(859, 38);
             this.panel1.TabIndex = 0;
             // 
-            // btnbuscarayuda
+            // label1
             // 
-            this.btnbuscarayuda.Location = new System.Drawing.Point(36, 10);
-            this.btnbuscarayuda.Margin = new System.Windows.Forms.Padding(4);
-            this.btnbuscarayuda.Name = "btnbuscarayuda";
-            this.btnbuscarayuda.Size = new System.Drawing.Size(716, 24);
-            this.btnbuscarayuda.TabIndex = 3;
-            this.btnbuscarayuda.Text = "buscar";
-            this.btnbuscarayuda.UseVisualStyleBackColor = true;
-            this.btnbuscarayuda.Click += new System.EventHandler(this.btnbuscarayuda_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(131, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Ayuda";
             // 
-            // textBoxprgnta1
+            // button1
             // 
-            this.textBoxprgnta1.Location = new System.Drawing.Point(36, 44);
-            this.textBoxprgnta1.Name = "textBoxprgnta1";
-            this.textBoxprgnta1.Size = new System.Drawing.Size(464, 20);
-            this.textBoxprgnta1.TabIndex = 1;
-            this.textBoxprgnta1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.button1.Location = new System.Drawing.Point(43, 44);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(348, 35);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Como recupero la contraseña?";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBoxprgnta2
+            // button2
             // 
-            this.textBoxprgnta2.Location = new System.Drawing.Point(36, 70);
-            this.textBoxprgnta2.Name = "textBoxprgnta2";
-            this.textBoxprgnta2.Size = new System.Drawing.Size(464, 20);
-            this.textBoxprgnta2.TabIndex = 2;
-            // 
-            // textBoxprgnta3
-            // 
-            this.textBoxprgnta3.Location = new System.Drawing.Point(36, 96);
-            this.textBoxprgnta3.Name = "textBoxprgnta3";
-            this.textBoxprgnta3.Size = new System.Drawing.Size(464, 20);
-            this.textBoxprgnta3.TabIndex = 3;
+            this.button2.Location = new System.Drawing.Point(43, 97);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(348, 35);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Como Como recupero contactos Borrados?";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Ayuda
             // 
@@ -86,25 +83,23 @@ namespace Gestor_de_contactos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(859, 701);
-            this.Controls.Add(this.textBoxprgnta3);
-            this.Controls.Add(this.textBoxprgnta2);
-            this.Controls.Add(this.textBoxprgnta1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Ayuda";
             this.Text = "Ayuda";
             this.Load += new System.EventHandler(this.Ayuda_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnbuscarayuda;
-        private System.Windows.Forms.TextBox textBoxprgnta1;
-        private System.Windows.Forms.TextBox textBoxprgnta2;
-        private System.Windows.Forms.TextBox textBoxprgnta3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

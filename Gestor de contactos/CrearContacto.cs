@@ -14,12 +14,38 @@ namespace Gestor_de_contactos
 {
     public partial class frmCrearContacto : Form
     {
+        DataSet miDs = new DataSet();
+        DataTable miTabla = new DataTable();
+
+
         public frmCrearContacto()
         {
             InitializeComponent();
+            {
+                // Otros códigos de inicialización...
+                miTabla = new DataTable();
+                // Configura las columnas de la tabla, por ejemplo:
+                miTabla.Columns.Add("Nombre", typeof(string));
+                miTabla.Columns.Add("Apellido", typeof(string));
+                miTabla.Columns.Add("Correouno", typeof(string));
+                miTabla.Columns.Add("Correodos", typeof(string));
+                miTabla.Columns.Add("NumerodeTelefono", typeof(string));
+                miTabla.Columns.Add("Fechadenacimiento", typeof(string));
+                miTabla.Columns.Add("Pais", typeof(string));
+                miTabla.Columns.Add("Empresa", typeof(string));
+                miTabla.Columns.Add("Cargo", typeof(string));
+                // Agrega las demás columnas de la misma manera
+            }
         }
 
-        DataTable miTabla = new DataTable();
+        private void mostrarDatos()
+        {
+        }
+
+        private DataSet ObtenerDatos()
+        {
+            throw new NotImplementedException();
+        }
 
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
@@ -34,59 +60,54 @@ namespace Gestor_de_contactos
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            string nombre = txtnombres.Text;
-            string apellido= txtApellidos.Text;
-            string correouno = txtCorreo.Text;
-            string correodos = txtCorreo2.Text;
-            string numerodetelefono = txtTelefono.Text;
-            string fechadenacimiento = dtpFechaDeNacimiento.Text;
-            string pais = cboPais.Text;
-            string empresa = txtEmpresa.Text;
-            string cargo = txtCargo.Text;
+            string Nombre = txtNombres.Text;
+            string Apellido= txtApellidos.Text;
+            string Correouno = txtCorreo.Text;
+            string Correodos = txtCorreo2.Text;
+            string Numerodetelefono = txtTelefono.Text;
+            string Fechadenacimiento = dtpFechaDeNacimiento.Text;
+            string Pais = cboPais.Text;
+            string Empresa = txtEmpresa.Text;
+            string Cargo = txtCargo.Text;
 
-            if (nombre.Length == 0)
+            if (Nombre.Length == 0)
             {
                 MessageBox.Show("Debes ingresar un nombre.");
                 return;
             }
-            if (apellido.Length == 0)
+            if (Apellido.Length == 0)
             {
                 MessageBox.Show("Debes ingresar un apellido.");
                 return;
             }
-            if (!correouno.Contains("@"))
-            {
-                MessageBox.Show("El correo electrónico debe contener un símbolo @.");
-                return;
-            }
-            if (!correodos.Contains("@"))
+            if (!Correouno.Contains("@"))
             {
                 MessageBox.Show("El correo electrónico debe contener un símbolo @.");
                 return;
             }
 
-            if (numerodetelefono.Length < 8)
+            if (Numerodetelefono.Length < 8)
             {
                 MessageBox.Show("El número de teléfono debe tener al menos 10 dígitos.");
                 return;
             }
 
-            if (fechadenacimiento.Length == 0)
+            if (Fechadenacimiento.Length == 0)
             {
                 MessageBox.Show("Debes ingresar su fecha de nacimiento.");
                 return;
             }
-            if (pais.Length == 0)
+            if (Pais.Length == 0)
             {
                 MessageBox.Show("Debes seleccionar un pais.");
                 return;
             }
-            if (empresa.Length == 0)
+            if (Empresa.Length == 0)
             {
                 MessageBox.Show("ingresa el nombre de la empresa.");
                 return;
             }
-            if (cargo.Length == 0)
+            if (Cargo.Length == 0)
             {
                 MessageBox.Show("Debes ingresar el cargo de la empresa.");
                 return;
@@ -94,43 +115,43 @@ namespace Gestor_de_contactos
 
             SqlConnection conexion = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Usuarios.mdf;Integrated Security=True");
             conexion.Open();
-            SqlCommand comando = new SqlCommand("INSERT INTO Contactos (Nombre, Apellido, Correouno, Correodos, NumerodeTelefono, Fechadenacimiento, pais, empresa, cargo) VALUES (@nombre, @apellido, @correouno, @correodos, @numerodetelefono, @fechadenacimiento, @pais, @empresa, @cargo)", conexion);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@apellido", apellido);
-            comando.Parameters.AddWithValue("@correouno", correouno);
-            comando.Parameters.AddWithValue("@correodos", correodos);
-            comando.Parameters.AddWithValue("@numerodetelefono", numerodetelefono);
-            comando.Parameters.AddWithValue("@fechadenacimiento", fechadenacimiento);
-            comando.Parameters.AddWithValue("@pais", pais);
-            comando.Parameters.AddWithValue("@empresa", empresa);
-            comando.Parameters.AddWithValue("@cargo", cargo);
+            SqlCommand comando = new SqlCommand("INSERT INTO Contactos (Nombre, Apellido, Correouno, Correodos, NumerodeTelefono, Fechadenacimiento, Pais, Empresa, Cargo) VALUES (@Nombre, @Apellido, @Correouno, @Correodos, @NumerodeTelefono, @Fechadenacimiento, @Pais, @Empresa, @Cargo)", conexion);
+            comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Apellido", Apellido);
+            comando.Parameters.AddWithValue("@Correouno", Correouno);
+            comando.Parameters.AddWithValue("@Correodos", Correodos);
+            comando.Parameters.AddWithValue("@Numerodetelefono", Numerodetelefono);
+            comando.Parameters.AddWithValue("@Fechadenacimiento", Fechadenacimiento);
+            comando.Parameters.AddWithValue("@Pais", Pais);
+            comando.Parameters.AddWithValue("@Empresa", Empresa);
+            comando.Parameters.AddWithValue("@Cargo", Cargo);
             comando.ExecuteNonQuery();
             conexion.Close();
             MessageBox.Show("Los datos se ingresaron correctamente");
             limpiarDatos();
 
             DataRow nuevaFila = miTabla.NewRow();
-            nuevaFila["Nombre"] = nombre;
-            nuevaFila["apellido"] = apellido;
-            nuevaFila["Correouno"] = correouno;
-            nuevaFila["Correodos"] = correodos;
-            nuevaFila["Numerodetelefono"] = numerodetelefono;
-            nuevaFila["Fechadenacimiento"] = fechadenacimiento;
-            nuevaFila["pais"] = pais;
-            nuevaFila["empresa"] = empresa;
-            nuevaFila["cargo"] = cargo;
+            nuevaFila["Nombre"] = Nombre;
+            nuevaFila["Apellido"] = Apellido;
+            nuevaFila["Correouno"] = Correouno;
+            nuevaFila["Correodos"] = Correodos;
+            nuevaFila["Numerodetelefono"] = Numerodetelefono;
+            nuevaFila["Fechadenacimiento"] = Fechadenacimiento;
+            nuevaFila["Pais"] = Pais;
+            nuevaFila["Empresa"] = Empresa;
+            nuevaFila["Cargo"] = Cargo;
             miTabla.Rows.Add(nuevaFila);
 
-        }       
-        
+            mostrarDatos();
+        }
+
         private void limpiarDatos()
         {
-            txtnombres.Text = "";
+            txtNombres.Text = "";
             txtApellidos.Text = "";
             txtCorreo.Text = "";
             txtCorreo2.Text = "";
             txtTelefono.Text = "";
-            txtTelefono2.Text = "";
             cboPais.Text = "";
             txtDireccion.Text = "";
             txtEmpresa.Text = "";

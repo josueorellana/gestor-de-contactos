@@ -12,6 +12,7 @@ namespace Gestor_de_contactos
 {
     public partial class Ayuda : Form
     {
+
         public Ayuda()
         {
             InitializeComponent();
@@ -29,7 +30,21 @@ namespace Gestor_de_contactos
 
         private void Ayuda_Load(object sender, EventArgs e)
         {
+        }
 
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ponte en contacto con un administrador", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ponte en contacto con un administrador", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En papelara, tienes 30 dias despues de haber borrado los contactos", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
