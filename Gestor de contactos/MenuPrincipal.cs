@@ -451,8 +451,12 @@ namespace Gestor_de_contactos
             dataGridContactos.ReadOnly = true;
         }
 
-
-
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Panel2.Visible = false;
+            Panel3.Visible = false;
+            openMenuPrincipalForm(new FrmMiCuenta());
+        }
     }
 
 }

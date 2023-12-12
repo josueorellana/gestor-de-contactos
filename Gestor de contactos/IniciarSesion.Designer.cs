@@ -40,7 +40,6 @@ namespace Gestor_de_contactos
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.btnprueba = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).BeginInit();
@@ -171,26 +170,12 @@ namespace Gestor_de_contactos
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Correo Electronico";
             // 
-            // btnprueba
-            // 
-            this.btnprueba.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnprueba.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprueba.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnprueba.Location = new System.Drawing.Point(182, 482);
-            this.btnprueba.Name = "btnprueba";
-            this.btnprueba.Size = new System.Drawing.Size(106, 33);
-            this.btnprueba.TabIndex = 9;
-            this.btnprueba.Text = "Prueba";
-            this.btnprueba.UseVisualStyleBackColor = true;
-            this.btnprueba.Click += new System.EventHandler(this.btnprueba_Click);
-            // 
             // frmInicioDeSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(504, 537);
-            this.Controls.Add(this.btnprueba);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "frmInicioDeSesion";
@@ -218,7 +203,6 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.PictureBox pbMostrar;
         private System.Windows.Forms.PictureBox pbOcultar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnprueba;
     }
 }
 

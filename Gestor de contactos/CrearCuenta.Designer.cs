@@ -29,7 +29,6 @@ namespace Gestor_de_contactos
         /// </summary>
         private void InitializeComponent()
         {
-            this.grdDatosUsuarios = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
@@ -41,21 +40,10 @@ namespace Gestor_de_contactos
             this.txtNumeroDeTelefono = new System.Windows.Forms.TextBox();
             this.txtCorreoElectronico = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).BeginInit();
+            this.grdDatosUsuarios = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdDatosUsuarios
-            // 
-            this.grdDatosUsuarios.AllowUserToAddRows = false;
-            this.grdDatosUsuarios.AllowUserToDeleteRows = false;
-            this.grdDatosUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdDatosUsuarios.Location = new System.Drawing.Point(384, 32);
-            this.grdDatosUsuarios.Name = "grdDatosUsuarios";
-            this.grdDatosUsuarios.ReadOnly = true;
-            this.grdDatosUsuarios.Size = new System.Drawing.Size(507, 342);
-            this.grdDatosUsuarios.TabIndex = 0;
-            this.grdDatosUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosUsuarios_CellContentClick);
             // 
             // groupBox1
             // 
@@ -71,7 +59,7 @@ namespace Gestor_de_contactos
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(278, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(339, 377);
             this.groupBox1.TabIndex = 1;
@@ -168,6 +156,18 @@ namespace Gestor_de_contactos
             this.txtNombre.Size = new System.Drawing.Size(150, 20);
             this.txtNombre.TabIndex = 0;
             // 
+            // grdDatosUsuarios
+            // 
+            this.grdDatosUsuarios.AllowUserToAddRows = false;
+            this.grdDatosUsuarios.AllowUserToDeleteRows = false;
+            this.grdDatosUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDatosUsuarios.Location = new System.Drawing.Point(384, 32);
+            this.grdDatosUsuarios.Name = "grdDatosUsuarios";
+            this.grdDatosUsuarios.ReadOnly = true;
+            this.grdDatosUsuarios.Size = new System.Drawing.Size(121, 10);
+            this.grdDatosUsuarios.TabIndex = 0;
+            this.grdDatosUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosUsuarios_CellContentClick);
+            // 
             // CrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,16 +179,14 @@ namespace Gestor_de_contactos
             this.Name = "CrearCuenta";
             this.Text = "Crear Cuenta";
             this.Load += new System.EventHandler(this.prueba_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView grdDatosUsuarios;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblNumeroDeTelefono;
@@ -200,5 +198,6 @@ namespace Gestor_de_contactos
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.DataGridView grdDatosUsuarios;
     }
 }

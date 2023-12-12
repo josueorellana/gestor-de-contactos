@@ -21,5 +21,17 @@ namespace Gestor_de_contactos
         {
 
         }
+
+        private void FrmMiCuenta_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'usuariosDataSet.Usuario' Puede moverla o quitarla según sea necesario.
+            this.usuarioTableAdapter.Fill(this.usuariosDataSet.Usuario);
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
